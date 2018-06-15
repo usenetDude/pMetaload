@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+   <form class="form-horizontal" method="post" action="./update">
+       <div class="form-group row">
+           <label for="titleInput" class="col-form-label">Title</label>
+           <div class="col-10">
+               <input type="text" class="form-control" id="titleInput" placeholder="Example input" value="{{ title}}" name="titleInput">
+            </div>
+           <button type="submit" class="btn btn-primary">Save</button>
+       </div>
+   </form>
+       <div class="form-group">
+           {% for image in covers %}
+            <img src="{{ url_for('metadataeditor.loadCover', type=image) }}" class="img-fluid img-thumbnail" width="500" >
+           {% endfor %}
+        </div>
+    <form class="form-horizontal" method="post" action="./update">
+       <div class="form-group row">
+           <label for="titleInput" class="col-form-label">Cast</label>
+           <div class="col-10">
+           <input type="text" class="form-control" id="castInput" placeholder="Example input" value="{{ cast }}" name="castInput">
+               </div>
+           <button type="submit" class="btn btn-primary">Save</button>
+       </div>
+    </form>
+    <form  method="post" action="./update">
+       <div class="form-group">
+           <label for="titleInput">Description</label>
+            <textarea class="form-control" id="descriptionInput" placeholder="Example input" rows="10" name="descriptionInput">{{ description }}</textarea>
+           <button type="submit" class="btn btn-primary">Save</button>
+       </div>
+    </form>
+       <div class="form-group">
+           <label for="output">Output:</label>
+           <textarea class="form-control" id="output" placeholder="Example input" rows="35">{{ output }}</textarea>
+       </div>
+    <form  method="post" action="./torrent">
+        <button type="submit" class="btn btn-primary">Torrent</button>
+    </form>
+       <div class="form-group">
+           <label for="logs">Logs</label>
+            <textarea class="form-control" id="logs" placeholder="Example input" rows="10" name="logs">{{ log }}</textarea>
+       </div>
+    </form>
+{% endblock %}

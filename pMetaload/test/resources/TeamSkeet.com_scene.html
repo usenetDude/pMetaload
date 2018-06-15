@@ -1,0 +1,1554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- <meta http-equiv="X-UA-Compatible" content="IE=8" /> --><html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .video-dimensions {
+        width: 640px;
+        height: 360px;
+      }
+
+      .video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+	<!-- meta tag for SEO sitelinks verification -->
+	<meta name="google-site-verification" content="wX8ExYwPAFPD2kHmmUhw2L3AFnCXpwxx9sHBoAoR3gE" />	
+	<meta name="google-site-verification" content="vHp1aKt6K97h4lfe3PDXDziEvEbNi3bBHCWUmR44Zz4" />	
+	<meta content="index,follow" name="robots" />
+	<meta content="index,follow" name="googlebot" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /><script src="https://js-agent.newrelic.com/nr-1071.min.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MWF975"></script><script async="" src="//rum-static.pingdom.net/prum.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o&lt;n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&amp;&amp;(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&amp;&amp;(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&amp;&amp;(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&amp;&amp;(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o&lt;0?0:o);++r&lt;o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&amp;&amp;e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&amp;&amp;e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f&lt;c;f++)u[f].apply(a,r);var p=s[y[n]];return p&amp;&amp;p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&amp;&amp;(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&amp;&amp;"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&amp;&amp;e.licenseKey&amp;&amp;e.applicationID&amp;&amp;t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&amp;&amp;i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&amp;&amp;performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&amp;&amp;w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&amp;&amp;g&amp;&amp;g[l]&amp;&amp;!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<title>Isabella Nice | Young Rookie Gets Some Nookie | Teensdoporn | TeamSkeet</title> 	
+  <link rel="shortcut icon" href="http://cdn.teamskeetimages.com/design/tour/ts/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="http://cdn.assets.teamskeet.com/ts/css/ts_library.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.teamskeet.com/t1/dcss/load/singlesite?site=tdp&amp;PAGE=trailer" />
+    <!--[if lt IE 8]> <link rel="stylesheet" href="http://www.teamskeet.com/t1/css/ie.css" type="text/css" /> <![endif]-->
+    <!-- load JS libraries -->
+    <script type="text/javascript" src="http://cdn.assets.teamskeet.com/ts/js/tst1_lib.js"></script>
+
+        <script type="text/javascript" src="http://cdn.assets.teamskeet.com/ts/js/trailer/view.min.js?v=6"></script>
+    
+    <script type="text/javascript">
+$(function() {
+
+    baseUrl = 'http://www.teamskeet.com/t1/';
+
+    $("img.lazy").lazyload({
+        effect : "fadeIn"
+    });
+});
+    function checkCookie(var_pic){
+            is_picture_viewed = 0;
+            trap_picture_var = getCookie('trap_picture');
+            picture_var = getCookie('picture');
+            var ppp;
+            if (picture_var!=null &amp;&amp; picture_var!=""){
+                    for(ctr=1;ctr&lt;=5;ctr++){
+                            ppp = getCookie('picture_'+ctr);
+                            if(ppp==var_pic){
+                                    is_picture_viewed = 1;
+                            }
+                    }
+            }
+            if(trap_picture_var&gt;=5 &amp;&amp; is_picture_viewed == 1){
+            }
+            else if(trap_picture_var&gt;=5){
+                    location.href = "http://join.teamskeet.com/signup/signup.php?picture_trap=1";
+                    trap_picture_var++;
+                    }
+            else{
+                    picture_var = getCookie('picture');
+                    if (picture_var!=null &amp;&amp; picture_var!=""){
+                            for(ctr=1;ctr&lt;=5;ctr++){
+                                    picture_arr[ctr] = getCookie('picture_'+ctr);
+
+                                    if(picture_arr[ctr]==var_pic){
+                                            is_picture_viewed = 1;
+                                            }
+                                    }
+                            if(is_picture_viewed==0){
+                                    trap_picture_var++;
+                            setCookie ("picture_"+trap_picture_var, var_pic, 1);
+                                    }
+                    } else {
+                        picture_var = "2915d510926651a6f4b69ec4d9035e51";
+                        setCookie ("picture", picture_var, 1);
+                        setCookie ("picture_1", var_pic, 1);
+                        setCookie ("trap_picture", trap_picture_var, -1);
+                        trap_picture_var = 1;
+                            }
+
+                    setCookie("trap_picture", trap_picture_var, 1);
+
+                    if(trap_picture_var&gt;5) {
+                            addtitlelink("You are at your viewing limit");
+                            location.href = "http://join.teamskeet.com/signup/signup.php?picture_trap=1";
+                            return false;
+                            }
+                    else{
+                            addtitlelink("You have viewed "+trap_picture_var+" picture/s out of 5");
+                            return true;
+                            }
+                    }
+            }
+
+    function checkTrailerToRedirect(var_trailer) {
+        console.log('checking here only:' + getCookie('trap_trailer'))
+        if(getCookie('trap_trailer')&gt;=5){
+            location.href = "http://join.teamskeet.com/signup/signup.php?trailer_trap=1";
+        }
+    }
+
+    function checkTrailerCookie(var_trailer){
+        console.log('checkTrailerCookie getCookie:' + getCookie('trap_trailer'));
+                        is_trailer_viewed = 0;
+            trap_trailer_var = getCookie('trap_trailer');
+            trailer_var = getCookie('trailer');
+            if (trailer_var!=null &amp;&amp; trailer_var!=""){
+                    for(ctr=1;ctr&lt;=5;ctr++){
+                            trailer_arr[ctr] = getCookie('trailer_'+ctr);
+                            if(trailer_arr[ctr]==var_trailer){
+                                    is_trailer_viewed = 1;
+                            }
+                    }
+            }
+            if(getCookie('trap_trailer')&gt;=5 &amp;&amp; is_trailer_viewed){
+            }
+            else if(getCookie('trap_trailer')&gt;=5){
+                              $.post("http://www.teamskeet.com/t1/ajax/trailer_trap_track?res=low_res&amp;version=b").done(function(data) {
+            location.href = "http://join.teamskeet.com/signup/signup.php?trailer_trap=1";
+            trap_trailer_var++;
+                    }); 
+                    
+      } else{
+        trailer_var = getCookie('trailer');
+        if (trailer_var!=null &amp;&amp; trailer_var!=""){
+                for(ctr=1;ctr&lt;=5;ctr++){
+                        trailer_arr[ctr] = getCookie('trailer_'+ctr);
+                        if(trailer_arr[ctr]==var_trailer){
+                                is_trailer_viewed = 1;
+                                }
+                        }
+                if(is_trailer_viewed==0){
+                        trap_trailer_var++;
+                setCookie ("trailer_"+trap_trailer_var, var_trailer, 1);
+                    console.log('incremented here, trap trailer=&gt;' +  trap_trailer_var + ' var trailer=&gt;' + var_trailer);
+                        }
+        } else {
+            trailer_var = "123xczy721369acxn213i1351sax1235";
+            setCookie ("trailer", trailer_var, 1);
+            setCookie ("trailer_1", var_trailer, 1);
+            setCookie ("trap_trailer", trap_trailer_var, -1);
+            trap_trailer_var = 1;
+            
+         }
+
+        setCookie("trap_trailer", trap_trailer_var, 1);
+
+        }
+        }
+    $(function() {
+              $("#site_dropdown").val("http://www.teamskeet.com/t1/site/?site=teamskeet");
+
+
+            $("#site_dropdown").change(function() {
+                    $this = $(this);
+                    var value = $this.val();
+                    var sitename = $("#site_dropdown option:selected").attr('data-sitename');
+                    var acronym = $("#site_dropdown option:selected").attr('data-acro');
+                    var url = "http://www.teamskeet.com/t1/index.php/trailer/view/young_rookie_gets_some_nookie/isabella_nice";
+                    $.ajax({
+                      url: "http://www.teamskeet.com/t1/index.php/ajax/dropdown_track",
+                      type: "POST",
+                      data: {
+                        url: url, 
+                        value: value,
+                        sitename: sitename,
+                        acronym: acronym
+                      },
+                      context: $this
+                      }).done(function() {
+                        var rurl = $(this).val();
+                        window.location = rurl;
+                        console.log( "success" );
+                      });
+            });
+
+            $("#click-more-register").bind("click", function(e) {
+                var url = 'http://www.teamskeet.com/t1/trailer/view/young_rookie_gets_some_nookie/isabella_nice';
+                var page = 'trailer';
+                var site = '';
+                var tracker_url = 'http://www.teamskeet.com/t1/tracker/click_register';
+                //$.post(tracker_url, {'page': page, 'site': site, 'url': url}, function(data){
+
+                //});
+            });
+
+            $("#breadCrumbs-a-more").bind("click", function(e) {
+                    if($("#breadCrumbs-span-more").html() == '+') {
+                            $("#breadCrumbs-div-more").show();
+                            $("#breadCrumbs-span-more").html('-');
+                            $("#breadCrumbs-a-more").html('Click Here to Hide');
+                            //$.post('http://www.teamskeet.com/t1/tracker/click_more', {'type': 1,'page': 'trailer', 'site': '', 'url': 'http://www.teamskeet.com/t1/trailer/view/young_rookie_gets_some_nookie/isabella_nice'});
+                    }
+                    else {
+                            $("#breadCrumbs-div-more").hide();
+                            $("#breadCrumbs-span-more").html('+');
+                            $("#breadCrumbs-a-more").html('Click Here for More');
+                            //$.post('http://www.teamskeet.com/t1/tracker/click_more', {'type': 2,'page': 'trailer', 'site': '', 'url': 'http://www.teamskeet.com/t1/trailer/view/young_rookie_gets_some_nookie/isabella_nice'});
+                    }
+        //$.post('http://www.teamskeet.com/t1/js/click_more.php');
+                    return false;
+            });
+
+            $('#click_more_register').bind('click', function(){
+                //$.post('http://www.teamskeet.com/t1/tracker/click_more', {'type': 3,'page': 'trailer', 'site': '', 'url': 'http://www.teamskeet.com/t1/trailer/view/young_rookie_gets_some_nookie/isabella_nice'}, function(data){
+                //    window.location.href = $('#click_more_register').attr('href');
+                //});
+                window.location.href = $('#click_more_register').attr('href');
+                return false;
+            });
+
+            $("#breadCrumbs-a-less").bind("click", function(e) {
+                    $("#breadCrumbs-div-more").hide();
+                    $("#breadCrumbs-span-more").html('+');
+                    $("#breadCrumbs-a-more").html('Click Here for More');
+
+                    return false;
+            });
+
+            $('.pagingation').bind('click', function(){
+                var data = {
+                    'page': $(this).text(),
+                    'href': $(this).attr('href')
+                };
+                //var tracker_url = 'http://www.teamskeet.com/t1/tracker/pagination_link';
+                //$.post(tracker_url, data, function(){
+                    window.location.href = data.href;
+                //});
+                return false;
+            });
+
+            $('#siteplaceholder a').bind('click', function(){
+                var href = $(this).attr('href');
+                var data = {
+                    'site': $(this).attr('rel'),
+                    'page': 'trailer'
+                };
+                //var tracker_url = 'http://www.teamskeet.com/t1/tracker/our_sites';
+                //$.post(tracker_url, data, function(){
+                    window.location.href = href;
+                //});
+                return false;
+            });
+
+                                    var tracker_url = 'http://www.teamskeet.com/t1/tracker/view_options';
+            $('.viewing_gray_border a').bind('click', function(){
+                var href = $(this).attr('href');
+                //$.post(tracker_url, {'site': 'tdp', 'res': $(this).text()}, function(){
+                    window.location.href = href;
+                //});
+                return false;
+            });
+            $('#bottom_controls_wrapper .right a').bind('click', function(){
+                var href = $(this).attr('href');
+                //$.post(tracker_url, {type: 'download', site: 'tdp'}, function(){
+                    window.location.href = href;
+                //});
+                return false;
+            });
+            $('.trailer_jlink').bind('click', function(){
+                //$.post(tracker_url, {type: 'watch', site: 'tdp'}, function(){
+                    window.location.href = 'http://join.teamskeet.com/signup/signup.php';
+                //});
+            });
+            
+             
+
+    });
+$(function() {
+    $('.current').css('color','#5298DE');
+    $('.current').removeAttr("href");
+    $('.arrow1').css('display','none');
+    $('.arrow2').css('display','none');
+});
+</script>
+
+<script type="text/javascript">
+  //declare variables for use by a/b test
+  window.vwo_signup_url = 'http://join.teamskeet.com/signup/signup.php';
+  window.vwo_natscode = 'MDowOjIy';
+</script>
+
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type="text/javascript">
+var _vwo_code=(function(){
+var account_id=27891,
+settings_tolerance=2000,
+library_tolerance=1500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&amp;u='+encodeURIComponent(d.URL)+'&amp;r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script><script src="//dev.visualwebsiteoptimizer.com/j.php?a=27891&amp;u=http%3A%2F%2Fwww.teamskeet.com%2Ft1%2Ftrailer%2Fview%2Fyoung_rookie_gets_some_nookie%2Fisabella_nice%3Ftype%3Dlow_res%26trailer%3Db&amp;r=0.4167521365633955" type="text/javascript"></script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+<style>
+  #logo_main {
+    /* background: url("http://cdn.teamskeetimages.com/design/tour/ts/main/dogtag-main-jul4.png") no-repeat scroll left top transparent;
+    background: url("http://cdn.teamskeetimages.com/design/tour/ts/main/sample2c.png") no-repeat scroll left top transparent; */
+  }
+  html, #html {
+    /* background: url("http://cdn.teamskeetimages.com/design/tour/ts/bg/bg_ts_main_new-jul4.jpg") no-repeat scroll center top transparent;
+    background: url("http://cdn.teamskeetimages.com/design/tour/ts/bg/bg_ts_main_new_2.jpg") no-repeat scroll center top transparent; */
+}
+</style>
+
+<!-- Video JS -->
+
+<!--pingdom real user monitoring-->
+<script>
+var _prum = [['id', '59c278c391ef50def7dac20a'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>
+<!--pingdom real user monitoring end-->
+
+    <link href="http://cdn.assets.teamskeet.com/smallsites/common/js/videojs/video-js.css" rel="stylesheet" />
+    <link href="http://cdn.assets.teamskeet.com/smallsites/common/js/videojs/videojs-customize.css" rel="stylesheet" />
+    <link href="http://cdn.assets.teamskeet.com/smallsites/common/js/videojs/videojs-resolution-switcher.css" rel="stylesheet" />
+    <script src="http://cdn.assets.teamskeet.com/smallsites/common/js/videojs/videojs-ie8.min.js"></script>
+    <script src="http://cdn.assets.teamskeet.com/smallsites/common/js/videojs/video.js"></script>
+    <script type="text/javascript" src="http://cdn.assets.teamskeet.com/common/video-js-5.13.1/dailymotion-hls.js"></script>
+    <script type="text/javascript" src="http://cdn.assets.teamskeet.com/common/video-js-5.13.1/videojs5.hlsjs.js"></script>
+    <script src="http://cdn.assets.teamskeet.com/smallsites/common/js/videojs/videojs-resolution-switcher.js"></script>
+
+</head>
+<body>
+<!-- start of ga code -->
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWF975"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWF975');</script>
+<!-- End Google Tag Manager --><!-- end of ga code -->
+  <div id="dollar-link" style="visibility: hidden;">
+    <a id="speciall-link" style="cursor:pointer;" onclick="special_tracking('trailer','http://join.teamskeet.com/signup/signup.php?step=signup&amp;nats=MC4wLjE1LjE1LjAuMC4wLjAuMA&amp;switched=1&amp;strack=0&amp;opt=1'); "></a>
+    <!--<a id="speciall-link"  style="cursor:pointer;"  onclick="special_tracking('trailer','http://join.teamskeet.com/signup/signup.php');" ></a>-->
+    <!--<a id="twitter" href="http://twitter.com/TeamSkeet" target="_blank" title="Follow Us on Twitter"> </a>
+    <a id="facebook" href="http://www.facebook.com/pages/TeamSkeet/101205029949350" target="_blank" title="Follow Us on Facebook"> </a>-->
+  </div>
+
+<!--[if IE]>
+<style>
+html, #html {
+    background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/bg_bot_ts_blank_v2_h180.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+</style>
+<![endif]-->
+
+  <div id="html">
+        <span class="meta_h1"></span>
+                            <div style="background: url('http://cdn.teamskeetimages.com/design/tour/bg/new_tdp-bg_01.png') top center no-repeat; height: 34px; position: absolute; width: 100%; left: 0"></div>
+                        
+    <div id="wrap">
+          <div id="container-frame-left"></div>
+            <div id="container-frame-bg"></div>            
+            <div id="container-frame-right"></div>
+            <a id="logo_resize" href="http://www.teamskeet.com/t1/">TeamSkeet - We Play Dirty tdp</a>
+            <div id="topnav">
+
+
+          <form name="jump">
+
+      <label for="menu" style="float:left; vertical-align:middle;">
+            <div style="top:5px; left:-200px; vertical-align:middle; position:relative;"><a href="http://www.instagram.com/teamskeet"> <img src="http://cdn.teamskeetimages.com/design/tour/ts/main/ig.png" width="66" height="18" /></a>   <a href="https://twitter.com/teamskeet"><img src="http://cdn.teamskeetimages.com/design/tour/ts/main/twit.png" width="52" height="18" /></a>
+               <font style=" position:relative; top:-4px;">Our Sites</font>   </div></label>
+        <!-- no. of sites: 29 -->            <select name="menu" class="box" id="site_dropdown" style="width: 170px; padding: 0px; margin: 0px; display: none;" sb="79708008">
+              <option value="http://www.teamskeet.com/t1/?" data-sitename="teamskeet" data-acro="ts">Team Skeet (HOME)</option>
+                                <option data-sitename="Exxxtra small" data-acro="exs" value="http://www.teamskeet.com/t1/site/?site=exxxtrasmall">Exxxtra small</option>;
+                                <option data-sitename="Teen Pies" data-acro="tp" value="http://www.teamskeet.com/t1/site/?site=teenpies">Teen Pies</option>;
+                                <option data-sitename="Innocent High" data-acro="ih" value="http://www.teamskeet.com/t1/site/?site=innocenthigh">Innocent High</option>;
+                                <option data-sitename="Teen Curves" data-acro="tc" value="http://www.teamskeet.com/t1/site/?site=teencurves">Teen Curves</option>;
+                                <option data-sitename="CFNM Teens" data-acro="cfnm" value="http://www.teamskeet.com/t1/site/?site=cfnmteens">CFNM Teens</option>;
+                                <option data-sitename="Teens Love Anal" data-acro="tla" value="http://www.teamskeet.com/t1/site/?site=teensloveanal">Teens Love Anal</option>;
+                                <option data-sitename="My Babysitters Club" data-acro="bsc" value="http://www.teamskeet.com/t1/site/?site=mybabysittersclub">My Babysitters Club</option>;
+                                <option data-sitename="She's New" data-acro="sn" value="http://www.teamskeet.com/t1/site/?site=shesnew">She's New</option>;
+                                <option data-sitename="Teens Do Porn" data-acro="tdp" value="http://www.teamskeet.com/t1/site/?site=teensdoporn">Teens Do Porn</option>;
+                                <option data-sitename="POV Life" data-acro="pov" value="http://www.teamskeet.com/t1/site/?site=povlife">POV Life</option>;
+                                <option data-sitename="The Real Workout" data-acro="trw" value="http://www.teamskeet.com/t1/site/?site=therealworkout">The Real Workout</option>;
+                                <option data-sitename="This Girl Sucks" data-acro="tgs" value="http://www.teamskeet.com/t1/site/?site=thisgirlsucks">This Girl Sucks</option>;
+                                <option data-sitename="Teens Love Money" data-acro="tlm" value="http://www.teamskeet.com/t1/site/?site=teenslovemoney">Teens Love Money</option>;
+                                <option data-sitename="Oye Loca" data-acro="ol" value="http://www.teamskeet.com/t1/site/?site=oyeloca">Oye Loca</option>;
+                                <option data-sitename="Titty Attack" data-acro="ta" value="http://www.teamskeet.com/t1/site/?site=tittyattack">Titty Attack</option>;
+                                <option data-sitename="Teeny Black" data-acro="tb" value="http://www.teamskeet.com/t1/site/?site=teenyblack">Teeny Black</option>;
+                                <option data-sitename="Lust HD" data-acro="lhd" value="http://www.teamskeet.com/t1/site/?site=lusthd">Lust HD</option>;
+                                <option data-sitename="Rub A Teen" data-acro="rat" value="http://www.teamskeet.com/t1/site/?site=rubateen">Rub A Teen</option>;
+                                <option data-sitename="Her Freshman Year" data-acro="hfy" value="http://www.teamskeet.com/t1/site/?site=herfreshmanyear">Her Freshman Year</option>;
+                                <option data-sitename="Self Desire" data-acro="sd" value="http://www.teamskeet.com/t1/site/?site=selfdesire">Self Desire</option>;
+                                <option data-sitename="Solo Interviews" data-acro="si" value="http://www.teamskeet.com/t1/site/?site=solointerviews">Solo Interviews</option>;
+                                <option data-sitename="Team Skeet Extras" data-acro="tse" value="http://join.teamskeet.com/signup/signup.php">Team Skeet Extras</option>;
+                              <option data-sitename="Dyked" data-acro="dyk" value="http://www.teamskeet.com/t1/site/?site=dyked">Dyked</option>;
+                                <option data-sitename="Badmilfs" data-acro="bad" value="http://www.teamskeet.com/t1/site/?site=badmilfs">Badmilfs</option>;
+                                <option data-sitename="Gingerpatch" data-acro="gp" value="http://www.teamskeet.com/t1/site/?site=gingerpatch">Gingerpatch</option>;
+                                <option data-sitename="BraceFaced" data-acro="bfd" value="http://www.teamskeet.com/t1/site/?site=bracefaced">BraceFaced</option>;
+                                <option data-sitename="TeenJoi" data-acro="joi" value="http://www.teamskeet.com/t1/site/?site=teenjoi">TeenJoi</option>;
+                                <option data-sitename="StepSiblings" data-acro="sss" value="http://www.teamskeet.com/t1/site/?site=stepsiblings">StepSiblings</option>;
+                          </select><div id="sbHolder_79708008" class="sbHolder" tabindex="0"><a id="sbToggle_79708008" href="#" class="sbToggle"></a><a id="sbSelector_79708008" href="#" class="sbSelector">Team Skeet (HOME)</a><ul id="sbOptions_79708008" class="sbOptions" style="display: none;"><li><a href="#http://www.teamskeet.com/t1/?" rel="http://www.teamskeet.com/t1/?" class="sbFocus">Team Skeet (HOME)</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=exxxtrasmall" rel="http://www.teamskeet.com/t1/site/?site=exxxtrasmall">Exxxtra small</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=teenpies" rel="http://www.teamskeet.com/t1/site/?site=teenpies">Teen Pies</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=innocenthigh" rel="http://www.teamskeet.com/t1/site/?site=innocenthigh">Innocent High</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=teencurves" rel="http://www.teamskeet.com/t1/site/?site=teencurves">Teen Curves</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=cfnmteens" rel="http://www.teamskeet.com/t1/site/?site=cfnmteens">CFNM Teens</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=teensloveanal" rel="http://www.teamskeet.com/t1/site/?site=teensloveanal">Teens Love Anal</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=mybabysittersclub" rel="http://www.teamskeet.com/t1/site/?site=mybabysittersclub">My Babysitters Club</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=shesnew" rel="http://www.teamskeet.com/t1/site/?site=shesnew">She's New</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=teensdoporn" rel="http://www.teamskeet.com/t1/site/?site=teensdoporn">Teens Do Porn</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=povlife" rel="http://www.teamskeet.com/t1/site/?site=povlife">POV Life</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=therealworkout" rel="http://www.teamskeet.com/t1/site/?site=therealworkout">The Real Workout</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=thisgirlsucks" rel="http://www.teamskeet.com/t1/site/?site=thisgirlsucks">This Girl Sucks</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=teenslovemoney" rel="http://www.teamskeet.com/t1/site/?site=teenslovemoney">Teens Love Money</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=oyeloca" rel="http://www.teamskeet.com/t1/site/?site=oyeloca">Oye Loca</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=tittyattack" rel="http://www.teamskeet.com/t1/site/?site=tittyattack">Titty Attack</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=teenyblack" rel="http://www.teamskeet.com/t1/site/?site=teenyblack">Teeny Black</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=lusthd" rel="http://www.teamskeet.com/t1/site/?site=lusthd">Lust HD</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=rubateen" rel="http://www.teamskeet.com/t1/site/?site=rubateen">Rub A Teen</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=herfreshmanyear" rel="http://www.teamskeet.com/t1/site/?site=herfreshmanyear">Her Freshman Year</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=selfdesire" rel="http://www.teamskeet.com/t1/site/?site=selfdesire">Self Desire</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=solointerviews" rel="http://www.teamskeet.com/t1/site/?site=solointerviews">Solo Interviews</a></li><li><a href="#http://join.teamskeet.com/signup/signup.php" rel="http://join.teamskeet.com/signup/signup.php">Team Skeet Extras</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=dyked" rel="http://www.teamskeet.com/t1/site/?site=dyked">Dyked</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=badmilfs" rel="http://www.teamskeet.com/t1/site/?site=badmilfs">Badmilfs</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=gingerpatch" rel="http://www.teamskeet.com/t1/site/?site=gingerpatch">Gingerpatch</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=bracefaced" rel="http://www.teamskeet.com/t1/site/?site=bracefaced">BraceFaced</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=teenjoi" rel="http://www.teamskeet.com/t1/site/?site=teenjoi">TeenJoi</a></li><li><a href="#http://www.teamskeet.com/t1/site/?site=stepsiblings" rel="http://www.teamskeet.com/t1/site/?site=stepsiblings">StepSiblings</a></li></ul></div>
+        </form>
+      </div>
+
+
+                  <style>
+      .play_header{
+          background:url( http://cdn.teamskeetimages.com/design/tour/ts/main/playbutton_hover.png) no-repeat;
+          width:358px;
+          height:39px;
+          margin-left:95px;
+          width:358px;
+          top:313px;
+          margin-left:82px;
+          position:absolute;
+          z-index:10000000000000000;
+          }
+      .play_header:hover{
+          background:url( http://cdn.teamskeetimages.com/design/tour/ts/main/playbutton_hover.png) no-repeat;
+          background-position: 0px -39px;
+          width:358px;
+          height:39px;
+          margin-left:95px;
+          width:358px;
+          top:313px;
+          margin-left:82px;
+          position:absolute;
+          z-index:10000000000000000;
+          cursor:pointer;
+
+
+          }
+      .arrow_left{ position:absolute; z-index:1000; top:129px; margin-left:-10px;  cursor:pointer;}
+      .arrow_right{ position:absolute; z-index:1000; top:129px; margin-left:672px; cursor:pointer;}
+      </style>
+      <div id="pageBody">
+        <div id="content">
+          <div id="contentHeader" style="background-color:#FFF;">
+                    <div class="play_header" onclick="header_img_tracker('trailer', 'Halle+Von', 'Fuck+Her+Right+In+The+Pussy', 'halle_von_tdp.jpg');">
+                        <span style="margin-left:63px; padding-top:3px; font: 16px bolder Arial, Helvetica, sans-serif; color:#fff; position:absolute;"><strong>Halle Von</strong></span><br />
+                        <span style="margin-left:63px; margin-top:5px; font: 12px bolder Arial, Helvetica, sans-serif; color:#fff ; position:absolute;"><strong>Fuck Her Right In The Pussy</strong></span>
+
+                        <input type="hidden" id="links" value="http://www.teamskeet.com/t1/trailer/view/fuck_her_right_in_the_pussy/halle_von" />
+          </div>
+
+            <img class="header_image_clicks" src="http://cdn.teamskeetimages.com/design/tour/ts/main/header/halle_von_tdp.jpg" width="733" height="363" style="border:1px #FFF solid;cursor:pointer;" />
+                    </div>
+                                          <img src="http://cdn.teamskeetimages.com/design/tour/ts/main/1.jpg" width="280" height="416" id="white_bg" style="cursor:pointer;" onclick="header_tracking('1','trailer','http://join.teamskeet.com/signup/signup.php');" />
+                    <div style="position:relative;width:1015px;height:54px;margin-left:-26px;background:url('http://cdn.teamskeetimages.com/design/tour/ts/main/navi_bg.jpg')" id="menu-wrapper">
+            <style type="text/css">
+            #button {
+              padding: 0;
+            }
+            .meta_h1 {
+                color: #fff;
+                text-align: center;
+                font-size: 21px;
+                display: block;
+                background-color: green;
+            }
+            #button li {
+              display: inline;
+            }
+            #button li a {
+              font-family: Arial;
+              font-size: 22px;
+              text-decoration: none;
+              text-align:center;
+              float: left;
+              padding: 10px;
+
+              font-weight:bold;
+              color: #005fd0;
+              margin-right: 20px;
+              margin-left: 15px;
+              padding-top:4px;
+
+            }
+            #button  a.current{
+              font-family: Arial;
+              font-size: 22px;
+              text-decoration: none;
+              text-align:center;
+              float: left;
+              padding: 10px;
+              font-weight:bold;
+              color: #5298DE;
+              margin-right: 20px;
+              margin-left: 15px;
+              padding-top:4px;
+              cursor:default;
+            }
+            #button li a:hover {
+              color:#0074ff;
+              font-weight:bold;
+            }
+            .separator{
+              /*background: url('http://cdn.teamskeetimages.com/design/tour/ts/main/separator.png');**/
+              width: 4px;
+              height: 54px;
+              position: absolute;
+              top: -0.9px;
+
+            }
+            .joinnowbutton a{
+              margin-top:-12px;
+              background: url('http://cdn.teamskeetimages.com/design/tour/ts/main/join_now_tst2.png');
+              width: 211px;
+              height: 39px;
+            }
+            .joinnowbutton a:hover{
+              margin-top:-12px;
+              background: url('http://cdn.teamskeetimages.com/design/tour/ts/main/join_now_tst2.png');
+              background-position:0 -53px;
+              width: 211px;
+              height: 39px;
+
+            }
+            .homesubtext{
+              font-size: 11.5px;
+              text-align: center;
+              color:#999;
+            }
+
+
+            .scenesubtext{
+              font-size: 11.5px;
+              text-align: center;
+              color:#999;
+            }
+
+            .girlssubtext{
+              font-size: 11.5px;
+              text-align: center;
+              color:#999;
+            }
+
+            .sitessubtext{
+              font-size: 11.5px;
+              text-align: center;
+              color:#999;
+            }
+
+            .memberssubtext{
+              font-size: 11.5px;
+              text-align: center;
+              color:#999;
+
+            }
+			.paging_links{
+				word-wrap: break-word;
+				width: 80% !important;
+				background-color: #dfdfdf;
+				padding-left: 18.6%;
+				padding-right: 1%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.title_bg{
+				position:relative;
+				background:none !important;
+			}
+			#browserRight .left {
+				width: 190px;
+				position:absolute;
+				padding-top: 10px;
+			}
+
+            </style>
+                <ul id="button" style="width:1015px;">
+                          <li><a itemscope="" itemtype="http://schema.org/Movie" href="http://www.teamskeet.com/t1/" id="homelink" onmouseover="document.getElementById('homesubtext').style.color='#000'; document.getElementById('main_home').style.textDecoration='underline';" onmouseout="document.getElementById('homesubtext').style.color='#999'; document.getElementById('main_home').style.textDecoration='none';" alt="Home"><span itemprop="name" id="main_home"><meta content="http://www.teamskeet.com/t1/" itemprop="url" />HOME</span><br /><span class="homesubtext" id="homesubtext">Teamskeet.com</span><span class="separator"> </span></a></li>
+
+                                                          <li><a href="http://www.teamskeet.com/t1/updates/?site=tdp" itemscope="" itemtype="http://schema.org/Movie" id="sceneslink" onmouseover="document.getElementById('scenesubtext').style.color='#000'; document.getElementById('main_scene').style.textDecoration='underline';" onmouseout="document.getElementById('scenesubtext').style.color='#999'; document.getElementById('main_scene').style.textDecoration='none';" alt="Our Scenes"><span itemprop="name" id="main_scene"><meta content="http://www.teamskeet.com/t1/updates/?site=tdp" itemprop="url" />SCENES</span><br /><span class="scenesubtext" id="scenesubtext">High Definition</span><span class="separator"> </span></a></li>
+
+                          <li><a href="http://www.teamskeet.com/t1/girls/?site=tdp" itemscope="" itemtype="http://schema.org/Movie" onmouseover="document.getElementById('girlssubtext').style.color='#000'; document.getElementById('main_girl').style.textDecoration='underline'; " onmouseout="document.getElementById('girlssubtext').style.color='#999'; document.getElementById('main_girl').style.textDecoration='none';" alt="Our Girls"><span itemprop="name" id="main_girl"><meta content="http://www.teamskeet.com/t1/girls/?site=tdp" itemprop="url" />GIRLS</span><br /><span class="girlssubtext" id="girlssubtext">1300 + Hot Teens</span><span class="separator"> </span></a></li>
+
+                          <li><a href="http://www.teamskeet.com/t1/websites/" itemscope="" itemtype="http://schema.org/Movie" onmouseover="document.getElementById('sitessubtext').style.color='#000'; document.getElementById('main_site').style.textDecoration='underline';" onmouseout="document.getElementById('sitessubtext').style.color='#999'; document.getElementById('main_site').style.textDecoration='none';" alt="Our Sites"><span itemprop="name" id="main_site"><meta content="http://www.teamskeet.com/t1/websites/" itemprop="url" />SITES</span><br /><span class="sitessubtext" id="sitessubtext">100% Exclusive</span><span class="separator" id=""> </span></a></li>
+
+                          <li><a alt="Members" itemscope="" itemtype="http://schema.org/Movie" href="http://members.teamskeet.com" onmouseover="document.getElementById('memberssubtext').style.color='#000'; document.getElementById('main_members').style.textDecoration='underline';" onmouseout="document.getElementById('memberssubtext').style.color='#999'; document.getElementById('main_members').style.textDecoration='none';"><span itemprop="name" id="main_members"><meta content="http://members.teamskeet.com" itemprop="url" />MEMBERS</span><br /><span class="memberssubtext" id="memberssubtext">Log In Here</span></a></li>
+                          <li class="joinnowbutton"><a style="position:absolute; z-index:1000; cursor:pointer;" href="http://join.teamskeet.com/signup/signup.php"> </a></li>
+                        </ul>
+
+                    </div>
+          <div id="mac_css"></div>
+          <script type="text/javascript">
+          if(navigator.platform.match('Mac') !== null) {
+            var el = document.getElementById('mac_css');
+            el.innerHTML="&lt;style&gt;#button li a {-webkit-margin-end: 18px;-moz-margin-end: 22px;}&lt;/style&gt;";
+          }
+          </script>
+                        <!--<img src="http://cdn.teamskeetimages.com/design/tour/ts/main/navi_buttons.jpg" width="1002" height="57" style="margin-left:-26px; margin-bottom:3px;width:1015px;"  />  -->
+                </div>
+
+<div id="breadCrumbs" style="float: left;">
+  <div style="margin-top:22px; width:986px; padding-bottom:0px;" class="left">
+
+        <strong>What is Team Skeet? </strong>We bring you the hottest and cutest teens on the net!
+  <span id="breadCrumbs-span-more" style="color: #333333; font-size: 13px; font-weight: normal;">+</span>  <a style="cursor: pointer" id="breadCrumbs-a-more">Click Here for More</a>
+        <div style="margin-top: -17px; padding: 0 0 2px 4px; background-color: #041f34; float: right; height: 46px" id="searchWrapper">
+            <div id="headerSearchContainer">
+                <form method="post" id="searchForm" action="http://www.teamskeet.com/t1/search/results/">
+    <input type="hidden" name="searchType" id="searchType" />
+                <input type="hidden" name="page" value="trailer" />
+    <span style="font-style:italic;color:#fff;font-size:14px;margin-right:10px;">search</span>
+                <input type="text" style="background: #fff;border: 1px solid #999;height: 23px; line-height: 23px; margin-top: 9px; width: 210px;color:#333;" class="ac_input" name="query" id="searchQuery" autocomplete="off" maxlength="100" />
+                <input type="IMAGE" value="S" src="http://cdn.teamskeetimages.com/design/tour/ts/top/search_button.png" class="searchBtn" />
+    </form>
+            </div>
+  <div style="display: block; position: absolute; left: 757px; top: 522px; width: 212px; z-index: 100; background-color: #CCCCCC;" class="ul-search-wrapper">
+    <ul style="padding: 0px; list-style-type: none; background-color: #CCCCCC; float: left;  width: 212px; display: none;" id="ul-search-autocomplete">
+                    <li style="">
+                        <a href="http://tour.naughtyamerica.com/pornstar/brooke-banner/?cookie_return=tour&amp;term_cat=brooke-banner" class="results_link">
+                                <div class="label">BROOKE BANNER</div>
+                                <div style="float: right;" class="type"><small>pornstar</small></div>
+                        </a>
+                        <p style="clear: both"></p>
+                    </li>
+                    <li style="">
+                        <a href="http://tour.naughtyamerica.com/pornstar/brandee/?cookie_return=tour&amp;term_cat=brandee" class="results_link">
+                                <div class="label">BRANDEE</div>
+                                <div style="float: right;" class="type"><small>pornstar</small></div>
+                        </a>
+                        <p style="clear: both"></p>
+                    </li>
+                </ul>
+  </div>
+    </div>
+  </div>
+
+        <div id="breadCrumbs-div-more" style="width: 974px; background: none repeat scroll 0 0 #D4E4F9; float: left; padding: 10px; display: none;">
+<img src="http://cdn.teamskeetimages.com/design/tour/ts/main/breadcrumbs-logos2.png" width="958" height="160" />
+<p>
+Team: A cooperative Unit. Skeet: To Bust a Nut. TeamSkeet: your #1 team for the hottest new barely legal teen first timers.
+</p>
+<p>
+When you become a Member of TeamSkeet (aka Skeeter!), you get access to our 30 HD websites that get updated with EXCLUSIVE content everyday. We feature a Library of over 1100 scenes that grows larger by the day. These High quality videos star not only the sexy big name teen stars but also first time amateurs that we've found just for you!
+</p>
+<p>
+Our state of the art Member's Area makes watching and downloading movies a jiffy. With our 24 hour Support guarantee, you can be sure that you will have NO issues enjoy the hours of porn that we have. If for any reason you are unsatisfied, feel free to drop us a quick email and we will address your issues. If we cant fix it, we will give you a full refund. As easy as that!!!
+</p>
+<p>
+Our sites not only feature hot teens, but TeamSkeet also makes it a point to film as much variety as possible. Big tit babes in TittyAttack, Schoolgirls that enroll at Innocenthigh, Workout babes, latinas, solo girls, heck even Extra Small petite girls are all presented here in a super easy and fun manner for your total enjoyment!
+</p>
+<p>
+We look forward to having you join us!  Remember we are only an email/phone call away - <a id="linkSignupWTS" style="cursor:pointer;">Register Now!</a>
+</p>
+<a href="" id="breadCrumbs-a-less" style="float: right;">Read Less [-]</a>
+
+<script src="http://cdn.assets.teamskeet.com/jquery.tstracker.js"></script>
+<script>
+    $(function(){
+        $.tstracker({
+            'event_name' : "impress_510",
+            'event_data' : {
+                 'thumb_id' : "510",
+            }
+        });
+    })
+</script>
+            
+<script type="text/javascript">
+$(function(){
+$('.header_image_clicks', this).click(function(){
+        var girl = "Halle Von";
+        var image = "halle_von_tdp.jpg";
+        var clicks = "608";
+        var impressions = "35106";
+        var id = "510";   
+
+     $.tstracker({
+            'event_name' : "impress_click_510",
+            'event_data' : {
+                 'thumb_id' : "510",
+            }
+    });
+    console.log('click_tracker');
+    window.location = "http://www.teamskeet.com/t1/trailer/view/fuck_her_right_in_the_pussy/halle_von";
+});   
+  $('#linkSignupWTS').click(function(e){
+    window.location.href='http://join.teamskeet.com/signup/signup.php?v=1'; 
+  
+  });
+  // mixpanel
+    $("#site_dropdown").selectbox().change(function() {
+        mixpanelTrack_sites('Site Dropdown', false);
+    });
+    
+    //sanitize seearch bar
+    $("#searchQuery").on('input',function(e){
+        var sanitize = $(this).val();
+        $(this).val(slugify(sanitize));
+    });
+
+    // slug
+    function slugify(text)
+    {
+        return text.toLowerCase().replace(/[^ \w]+/,'');
+    }
+});
+</script>
+</div>
+</div>
+<div class="clear"> </div>
+<div id="mainContent">
+<!--<iframe src="http://join.teamskeet.com/strack/MDowOjIy/15:15/0/0/join/?tpl=join25" frameborder="0" width="1" height="1"></iframe>--><!-- debug site: tdp -->
+<!-- debug xml : -->
+
+<div class="cblock" style="background-color:#FFF;">
+					
+	<div class="trailerBody">
+		<div class="clear" style="padding-left:20px; padding-top:9px; height:390px;*margin-top:15px;position:relative;">
+		<!-- start of viewing options box -->
+			<!--<div style='margin-left:38px;width:640px;padding-top:20px;'>
+			 <div style="background:url('http://cdn.teamskeetimages.com/design/tour/ts/trailer/hd_members.jpg') no-repeat;width:182px;height:21px;float:left;"></div>
+			<div style='position:relative;float:right;z-index:2000;'>-->
+
+				<!-- NOTE!!! PLEASE MOVE THIS TO 'teamskeet.com/t1/css/teamskeet.css' when apporved -->
+				<style type="text/css">
+				.viewing_gray_border{border:1px solid #ccc;border-bottom:none;padding:4px 20px;margin-left:3px;}
+				#mainContent .trailerBody .low_res-left {
+					float:left; 
+					margin-top: 2px;
+					margin-bottom: 10px;
+					padding-left:6px;
+					margin-left: 15%;
+					width: 170px;
+				}
+				#mainContent .trailerBody .low_res-right {
+					float:right;
+					margin-top: 2px;
+					margin-bottom: 10px;
+					margin-right: 15%;
+					width: 470px;
+				}
+
+				#mainContent .trailerBody .flash-left {
+					float:left;
+					margin-top: 2px;
+					margin-bottom: 10px;
+					margin-left: 9%;
+					width: 170px;
+				}
+				#mainContent .trailerBody .flash-right {
+					float:right;
+					margin-top: 2px;
+					margin-bottom: 10px;
+					margin-right: 9%;
+					width: 470px;
+				}
+
+				#mainContent .trailerBody .hi_res-left {
+					float:left;
+					margin-top: 2px;
+					margin-bottom: 10px;
+					margin-left: 7px;
+					width: 170px;
+				}
+				#mainContent .trailerBody .hi_res-right {
+					float:right;
+					margin-top: 2px;
+					margin-bottom: 10px;
+					margin-right: 3px;
+					width: 470px;
+				}
+				</style>
+                <!--
+				<div class='fl' style="padding-top:4px;">Viewing Options:&nbsp;</div>
+				<div class='fl viewing_gray_border'>
+
+											<span>LOW</span>
+									</div>
+				<div class='fl viewing_gray_border'>
+											<a href="http://www.teamskeet.com/t1/trailer/view/young_rookie_gets_some_nookie/isabella_nice?type=med_res&change=1">MED</a>
+									</div>
+				<div class='fl viewing_gray_border'>
+											<a href="http://www.teamskeet.com/t1/trailer/view/young_rookie_gets_some_nookie/isabella_nice?type=hi_res&change=1">HIGH</a>
+									</div>
+				<div class='fl viewing_gray_border'>
+					<a href="http://www.teamskeet.com/join-redirect.php?nats=MDowOjIy&site=tdp">1080p</a>
+				</div>
+			</div>
+		</div>-->
+		<!-- end of viewing options box -->
+				        <div tabindex="-1" poster="http://cdn.teamskeetimages.com/teamskeet/tdp/isabella_nice/shared/low.jpg" class="video-js vjs-paused video-dimensions vjs-controls-enabled vjs-workinghover vjs-user-inactive" id="video" role="region" aria-label="video player"><video id="video_html5_api" class="vjs-tech" poster="http://cdn.teamskeetimages.com/teamskeet/tdp/isabella_nice/shared/low.jpg" tabindex="-1" src="blob:http://www.teamskeet.com/7b436873-910d-44c8-9b75-8fa0186d0297"></video><div></div><div class="vjs-poster" tabindex="-1" aria-disabled="false" style="background-image: url(&quot;http://cdn.teamskeetimages.com/teamskeet/tdp/isabella_nice/shared/low.jpg&quot;);"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"></div><div class="vjs-loading-spinner" dir="ltr"></div><button class="vjs-big-play-button" type="button" aria-live="polite" title="Play Video" aria-disabled="false"><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr" role="group"><button class="vjs-play-control vjs-control vjs-button" type="button" aria-live="polite" title="Play" aria-disabled="false"><span class="vjs-control-text">Play</span></button><div class="vjs-volume-menu-button vjs-menu-button vjs-menu-button-inline vjs-control vjs-button vjs-volume-menu-button-horizontal vjs-vol-3" tabindex="0" role="button" aria-live="polite" title="Mute" aria-disabled="false"><div class="vjs-menu"><div class="vjs-menu-content"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" aria-label="volume level" aria-valuetext="100.00%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><span class="vjs-control-text">Mute</span></div><div class="vjs-current-time vjs-time-control vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-control vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 1:06</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" aria-label="progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text"><span>Loaded</span>: 0%</span><div style="left: 0%; width: 100%;"></div></div><div class="vjs-mouse-display" data-current-time="0:00" style="left: 0px;"></div><div class="vjs-play-progress vjs-slider-bar" data-current-time="0:00"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -1:06</div></div><div class="vjs-custom-control-spacer vjs-spacer "> </div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Playback Rate" aria-disabled="false" aria-expanded="false" aria-haspopup="true"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Playback Rate</span><div class="vjs-playback-rate-value">1</div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Chapters" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div><span class="vjs-control-text">Chapters</span></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Descriptions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Descriptions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">descriptions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Descriptions</span></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Subtitles" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">subtitles off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Subtitles</span></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Captions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">captions settings<span class="vjs-control-text">, opens captions settings dialog</span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">captions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Captions</span></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Audio Track" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Audio Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Audio Track</span></div><div class="vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-resolution-button" tabindex="0" role="menuitem" aria-live="polite" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Quality" title="Quality"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false"><a style="text-decoration:none; color:white;" onclick="redirect()">1080p</a><span class="vjs-control-text"> </span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false">High<span class="vjs-control-text"> </span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="false">Med<span class="vjs-control-text"> </span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true">Low<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Quality</span><span class="vjs-menu-icon"></span></div><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" aria-live="polite" title="Fullscreen" aria-disabled="false"><span class="vjs-control-text">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="video_component_351_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-offscreen" id="video_component_351_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden" tabindex="-1" role="dialog" aria-labelledby="TTsettingsDialogLabel-video_component_356" aria-describedby="TTsettingsDialogDescription-video_component_356"><div role="document"><div class="vjs-control-text" id="TTsettingsDialogLabel-video_component_356" aria-level="1" role="heading">Caption Settings Dialog</div><div class="vjs-control-text" id="TTsettingsDialogDescription-video_component_356">Beginning of dialog window. Escape will cancel and close the window.</div><div class="vjs-tracksettings"><div class="vjs-tracksettings-colors"><fieldset class="vjs-fg-color vjs-tracksetting"><legend>Text</legend><label class="vjs-label" for="captions-foreground-color-video_component_356">Color</label><select id="captions-foreground-color-video_component_356"><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label class="vjs-label" for="captions-foreground-opacity-video_component_356">Transparency</label><select id="captions-foreground-opacity-video_component_356"><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-tracksetting"><legend>Background</legend><label class="vjs-label" for="captions-background-color-video_component_356">Color</label><select id="captions-background-color-video_component_356"><option value="#000">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label class="vjs-label" for="captions-background-opacity-video_component_356">Transparency</label><select id="captions-background-opacity-video_component_356"><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-tracksetting"><legend>Window</legend><label class="vjs-label" for="captions-window-color-video_component_356">Color</label><select id="captions-window-color-video_component_356"><option value="#000">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label class="vjs-label" for="captions-window-opacity-video_component_356">Transparency</label><select id="captions-window-opacity-video_component_356"><option value="0">Transparent</option><option value="0.5">Semi-Transparent</option><option value="1">Opaque</option></select></span></fieldset></div><div class="vjs-tracksettings-font"><div class="vjs-font-percent vjs-tracksetting"><label class="vjs-label" for="captions-font-size-video_component_356">Font Size</label><select id="captions-font-size-video_component_356"><option value="0.50">50%</option><option value="0.75">75%</option><option value="1.00">100%</option><option value="1.25">125%</option><option value="1.50">150%</option><option value="1.75">175%</option><option value="2.00">200%</option><option value="3.00">300%</option><option value="4.00">400%</option></select></div><div class="vjs-edge-style vjs-tracksetting"><label class="vjs-label" for="video_component_356">Text Edge Style</label><select id="video_component_356"><option value="none">None</option><option value="raised">Raised</option><option value="depressed">Depressed</option><option value="uniform">Uniform</option><option value="dropshadow">Dropshadow</option></select></div><div class="vjs-font-family vjs-tracksetting"><label class="vjs-label" for="captions-font-family-video_component_356">Font Family</label><select id="captions-font-family-video_component_356"><option value="proportionalSansSerif">Proportional Sans-Serif</option><option value="monospaceSansSerif">Monospace Sans-Serif</option><option value="proportionalSerif">Proportional Serif</option><option value="monospaceSerif">Monospace Serif</option><option value="casual">Casual</option><option value="script">Script</option><option value="small-caps">Small Caps</option></select></div></div><div class="vjs-tracksettings-controls"><button class="vjs-default-button">Defaults</button><button class="vjs-done-button">Done</button></div></div></div></div></div>
+        <script>
+        var tourplayer = videojs('video', {
+          controls: true,
+          muted: false,
+          width: '640px',
+          height: '360px',
+          plugins: {
+            videoJsResolutionSwitcher: {
+              ui: true,
+              default: 'low', // Default resolution [{Number}, 'low', 'high'],
+              dynamicLabel: false // Display dynamic labels or gear symbol
+            }
+          }
+        }, function(){
+          var player = this;
+          window.player = player
+
+          player.updateSrc([
+            
+          
+                {src: "http://cdn2.hls.teamskeet.com/toursstream.paperstreetcash.com/teensdoporn/isabella_nice/teensdoporn_isabella_nice_trailer_low.mp4/playlist.m3u8?validfrom=1525383524&amp;validto=1525551524&amp;hash=t4%2B0afmgbuwkAxs1Eh%2FGAKvFdrc%3D", type: "application/x-mpegurl", label: 'Low', res: 360 },
+                {src: "http://cdn2f.downloads.content.members.teamskeet.com/content/teensdoporn/isabella_nice/videos/trailer/teensdoporn_isabella_nice_trailer_low.mp4?validfrom=1525383524&amp;validto=1525551524&amp;hash=1x86Ut3gJQJrTfZKwIY152mbMlM%3D", type: "video/mp4", label: 'Low', res: 360 },
+               
+               	{src: "http://cdn2.hls.teamskeet.com/toursstream.paperstreetcash.com/teensdoporn/isabella_nice/teensdoporn_isabella_nice_trailer_med.mp4/playlist.m3u8?validfrom=1525383524&amp;validto=1525551524&amp;hash=nbIDmD1MR5KtM78LzuXvdFj%2BdT0%3D", type: "application/x-mpegurl", label: 'Med', res: 430 },
+               	{src: "http://cdn2f.downloads.content.members.teamskeet.com/content/teensdoporn/isabella_nice/videos/trailer/teensdoporn_isabella_nice_trailer_med.mp4?validfrom=1525383524&amp;validto=1525551524&amp;hash=0tIUwpxgvY3Jgu3Ap5ZJwfl9GSc%3D", type: "video/mp4", label: 'Med', res: 430 },
+
+               	{src: "http://cdn2.hls.teamskeet.com/toursstream.paperstreetcash.com/teensdoporn/isabella_nice/teensdoporn_isabella_nice_trailer_hi.mp4/playlist.m3u8?validfrom=1525383524&amp;validto=1525551524&amp;hash=HdFG2cdpJDW9BMiz6%2FL1p8b84as%3D", type: "application/x-mpegurl", label: 'High', res: 518 },
+               	{src: "http://cdn2f.downloads.content.members.teamskeet.com/content/teensdoporn/isabella_nice/videos/trailer/teensdoporn_isabella_nice_trailer_hi.mp4?validfrom=1525383524&amp;validto=1525551524&amp;hash=JiYohEvHfzqDGLP98qu%2Ba7N5Cow%3D", type: "video/mp4", label: 'High', res: 518 },
+
+               	{src: "http://cdn2.hls.teamskeet.com/toursstream.paperstreetcash.com/teensdoporn/isabella_nice/teensdoporn_isabella_nice_trailer_hi.mp4/playlist.m3u8?validfrom=1525383524&amp;validto=1525551524&amp;hash=HdFG2cdpJDW9BMiz6%2FL1p8b84as%3D", type: "application/x-mpegurl", label: '&lt;a style="text-decoration:none; color:white;" onclick="redirect()"&gt;1080p&lt;/a&gt;', res: 1080 },
+               	{src: "http://cdn2f.downloads.content.members.teamskeet.com/content/teensdoporn/isabella_nice/videos/trailer/teensdoporn_isabella_nice_trailer_hi.mp4?validfrom=1525383524&amp;validto=1525551524&amp;hash=JiYohEvHfzqDGLP98qu%2Ba7N5Cow%3D", type: "video/mp4", label: '&lt;a style="text-decoration:none; color:white;" onclick="redirect()"&gt;1080p&lt;/a&gt;', res: 1080 },
+
+          ]);
+
+          player.on('resolutionchange', function(){
+              console.info('Source changed to %s', player.src())
+          });
+
+        });
+
+        function redirect() {
+            window.location.href = "http://www.teamskeet.com/join-redirect.php?site=tdp";
+        }
+        
+        tourplayer.on("play", function(e) {
+    		console.log('on play hd');
+            				    checkTrailerCookie('54427');
+				    $.post("http://www.teamskeet.com/t1/ajax/trailer_track?res=low&amp;version=b&amp;action=plays");
+				    if("young_rookie_gets_some_nookie" == "an_afternoon_rubdown") {
+				        window.location = 'http://join.teamskeet.com/signup/signup.php';
+				    }
+            							
+        });
+
+        $(document).ready(function(){
+                        		console.log('on ready hd');
+				    checkTrailerToRedirect('54427');
+				    // checkTrailerCookie('54427');
+				    $.post("http://www.teamskeet.com/t1/ajax/trailer_track?res=low&amp;version=b&amp;action=plays");
+				    if("young_rookie_gets_some_nookie" == "an_afternoon_rubdown") {
+				        window.location = 'http://join.teamskeet.com/signup/signup.php';
+				    }
+                    });
+            
+        tourplayer.on("ended", function() {
+            $('#popup-joinpage').show();
+            var myIFrame = $("#joinframe");
+			myIFrame.focus();
+			myIFrame.contents().find('#username').hide();
+			myIFrame.contents().find('#username').show().focus(); 
+        });
+             
+
+        </script>
+		<!--<script type="text/javascript" src="http://www.teamskeet.com/t1/js/swfobject.min.js"></script>
+		<script type="text/javascript" src="http://www.teamskeet.com/t1/flashplayer/newplayer/jwplayer.js"></script>
+		<script type="text/javascript">jwplayer.key="5A4oRGwktcNh8rSea1kNPAwh4cUe+gwhbYr1xHQDatA=";</script>
+		<script type="text/javascript">	
+		$(function(){
+			setCookie ("trap", "0", 1);
+			var playerInstance = jwplayer("flashplayer").setup({  
+				width: "640", 
+				allowfullscreen: "true",
+				height: "360",
+				file: "http://cdn2.hls.teamskeet.com/toursstream.paperstreetcash.com/teensdoporn/isabella_nice/teensdoporn_isabella_nice_trailer_low.mp4/playlist.m3u8?validfrom=1525383524&validto=1525551524&hash=t4%2B0afmgbuwkAxs1Eh%2FGAKvFdrc%3D", 
+				image: "http://cdn.teamskeetimages.com/teamskeet/tdp/isabella_nice/shared/low.jpg",  
+				fallback: false,
+				ga: {},       
+				analytics: { 
+					cookies: false 
+				}, 
+				plugins: {
+					"gapro-1": { accountid: "UA-31657227-1" }
+				}
+			});
+			
+			playerInstance.onReady(function() {
+				$("#loader").hide();
+			
+				playerInstance.onTime(function(e){
+					var trigger_val = e.duration - 4;
+						if(e.position >= trigger_val)
+							setTimeout(function(){
+								$('#popup-joinpage').show();
+								var myIFrame = $("#joinframe");
+								myIFrame.focus();
+								myIFrame.contents().find('#username').hide();
+								myIFrame.contents().find('#username').show().focus(); 
+							}, 4000);
+				});
+			});
+			
+			
+				playerInstance.onBeforePlay(function() {
+														checkTrailerCookie('54427');
+							$.post("http://www.teamskeet.com/t1/ajax/trailer_track?res=low&version=b&action=plays");
+							if("young_rookie_gets_some_nookie" == "an_afternoon_rubdown") {
+								window.location = 'http://join.teamskeet.com/signup/signup.php';
+							}
+														/*
+							if("young_rookie_gets_some_nookie" == "i_like_substitutes") {
+								window.location = 'http://join.teamskeet.com/signup/signup.php';
+							}
+							
+							if(getCookie('trap_trailer') == ''){
+								setCookie ("trailer", "123xczy721369acxn213i1351sax1235", 1);
+								setCookie ("trailer_1", "trailer_1", 1);
+								setCookie ("trap_trailer", "1", 1);
+								checkTrailerCookie('trailer_1');
+								setCookie ("trap", "1", 1);
+								$.post("http://www.teamskeet.com/t1/ajax/trailer_track?res=low&version=b&action=plays");
+							}else{
+								if(getCookie('trap') == 0)
+								{
+									var num_trailer = parseInt(getCookie('trap_trailer'))+1;
+									checkTrailerCookie('trailer_'+num_trailer);
+								$.post("http://www.teamskeet.com/t1/ajax/trailer_track?res=low&version=b&action=plays");	
+								}
+							}
+							*/
+				});
+			
+
+			
+			
+			if(!swfobject.hasFlashPlayerVersion("1")) 
+			{
+				$("#loader").hide();
+				$(".flashMessage").show();
+			}
+		
+		});
+		</script>-->
+				<!--<div style="width:640px;margin-left:38px;padding-top:0px;"> 
+				<div id="loader" style="position:absolute;z-index:999999;top: 210px;left: 285px;font-size: 25px;overflow: hiddin;width: 140px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;">Loading <img  src="http://cdn.teamskeetimages.com/tours/ts/t1/trailer/loading.gif" alt="" style="float: right;width: 30px;margin-top: -3px"/></div>
+                    <div id="tourPlayer" style="width:640px;">
+                        <div id="flashplayer" style="width:640px;height:360px;">
+                            <div id="altContent" align="center">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="100%" border="0">
+                                    <tr>
+                                        <td align="center" valign="middle" height="360">
+											<div class="flashMessage" style="display:none;">
+												<font size="+1"><span style="color: #ff0000;">You either have a old version of flash installed or no flash installed, please follow the link below</span></font>
+												<br><a href="http://get.adobe.com/flashplayer/"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" border="0" /></a>
+											</div>
+                                        </td> 
+                                    </tr>
+                                </table> 
+                            </div> 
+                        </div>
+                    </div>
+                </div> -->
+                                                                            <div style="top:10px;left:680px;position:absolute;">
+                        <iframe width="285" scrolling="no" height="410" frameborder="no" noresize="no" src="http://join.teamskeet.com/track/MC4wLjE1LjI5NTIuMC4wLjAuMC4w/join?tpl=join19&amp;vwo=1&amp;version=b"></iframe>
+                    </div><!-- container -->
+                            		
+		
+		<div id="popup-joinpage" style="overflow: hidden;height:360px;z-index:3000;position:absolute;display:none; margin-top:-360px;">
+			<!-- <iframe src="http://join.teamskeet.com/signup/signup.php?tpl=join22&nats=MC4wLjE1LjI5NTIuMC4wLjAuMC4w" frameborder="0" scrolling="no" height="400" width="528"></iframe>-->
+							<img style="cursor:pointer" id="trailerIMG" src="http://cdn.teamskeetimages.com/tours/ts/t1/trailer/join_top_765x399_v1_b.png" alt="" height="360" width="640" />
+				<script type="text/javascript">
+				$(function(){
+					$("#trailerIMG").click(function(){
+						$('&lt;iframe id="hiddenframe" style="visibility:hidden;position:absolute;width:0px" src="http://www.teamskeet.com/t1/ajax/trailer_track?res=low&amp;version=b&amp;action=join_click&amp;id=999&amp;option_text='+ encodeURIComponent('trailer join image') +'" frameborder="0"&gt;&lt;/iframe&gt;').appendTo('#frameCont2').on('load',function(){
+							   window.location = "http://join.teamskeet.com/signup/signup.php?&amp;custom1=TSjoin78";
+						});
+					});
+				});
+				</script>
+						
+		</div><!-- pop up join page -->			
+		</div><!-- clear -->		
+<div id="frameCont2" style="display:none"></div>
+       		   <div id="bottom_controls_wrapper" style="position:relative;width:640px;margin-left:30px;margin-top:*margin-top:60px;;">
+							<div class="left gray" style="font-size: 12px;margin-left:8px;padding-left:0px;width:150px;">
+							<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+				<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4c7fcee93d651374" class="addthis_button_compact">Share</a>
+				<span class="addthis_separator">|</span>
+				<a class="addthis_button_facebook"></a>
+				<a class="addthis_button_myspace"></a>
+				<a class="addthis_button_google"></a>
+				<a class="addthis_button_twitter"></a>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c7fcee93d651374"></script>
+				<!-- AddThis Button END -->
+			</div>
+							<div class="right gray" style="font-size: 12px;margin-right:0px;padding-right:0px;width:460px;">
+							To download: <a href="http://cdn2f.downloads.trailers.teamskeet.com/tdp/isabella_nice/teensdoporn_isabella_nice_trailer_hi_res.wmv">right click here</a> and choose Save Target As...  | 
+								Times Viewed: <span class="bluespan">100000</span>
+							</div>
+			</div>
+	</div>
+	<!-- player bottom links end -->
+
+	<div class="clear"></div>
+	<div style="margin-bottom:10px;">
+		<li class="trailer_jlink_li"><a style="cursor:pointer;" onclick="join_tracking('Watch Full Movie Instantly','trailer','http://join.teamskeet.com/signup/signup.php');" class="trailer_jlink">Watch Full Movie Instantly</a></li>
+	</div>
+
+	<style>
+		#star-list {
+			background: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating.gif") no-repeat scroll left top transparent !important;
+			height: 20px;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			width: 440px;
+		}
+		.r1 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_01.gif") !important;
+		}
+		.r2 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_02.gif") !important;
+		}
+		.r3 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_03.gif") !important;
+		}
+		.r4 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_04.gif") !important;
+		}
+		.r5 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_05.gif") !important;
+		}
+		.r6 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_06.gif") !important;
+		}
+		.r7 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_07.gif") !important;
+		}
+
+		.r8 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_08.gif") !important;
+		}
+		.r9 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_09.gif") !important;
+		}
+		.r10 {
+			background-image: url("http://cdn.teamskeetimages.com/design/tour/ts/rating/gray/rating_numbers_10.gif") !important;
+		}
+	</style>
+		<div id="story-and-tags" style="border:1px solid #e3e3e3;width:920px;margin:0px auto;margin-bottom:10px;">
+		<table cellspacing="0" cellpadding="" 0="">
+			<tbody><tr style="background-color:#efefef;">
+				<td align="left" valign="top">
+					<div style="width:430px;text-align:left;margin:8px;border-right:3px dotted #bbbbbb;position:relative;">
+						<div style="float:left;">
+							<img width="200" src="http://cdn.teamskeetimages.com/design/tour/ts/trailer/logos/tdp.jpg" />
+						</div>
+						<div style="float:left;margin-left:15px;max-width:215px;overflow:hidden;">
+							<h3 style="font-size:20px;color:#5da7fc;margin-bottom:2px;white-space:nowrap;margin-top:0px;"><a style="text-decoration:none;" href="http://www.teamskeet.com/t1/profile/view/141039/isabella_nice/">Isabella Nice</a></h3>
+							<div style="white-space:nowrap;color:#000;font-size:17px;" class="">Young Rookie Gets Some ...</div>
+							<div style="white-space:nowrap;"><span class="gray">Site:</span> 
+														<a style="text-decoration:none;" href="http://www.teamskeet.com/t1/site/?site=teensdoporn">TeensDoPorn.com</a></div>
+														<div style="white-space:nowrap;" class="gray">Date Added: April 30th, 2018</div>
+							<div class="scene_rater gray" rel="54427" style="margin-left:-13px;margin-bottom:60px;width:226px;">			<style type="text/css">
+				.br3{font-style:3px;height:3px;}
+				.girlratingultext{list-style-type:none;padding:3px 0 0 0;margin:0;width:70px;}
+				.girlrating{width:500px;height:26px;}
+				#star-list{margin:0;padding:0;list-style-type:none;width:440px;height:20px;position:relative;background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating.gif) no-repeat top left; z-order:1}
+				#star-list .membersonly { color: #f00; text-decoration: underline; } #star-list .membersonly:hover { color: #a00; text-decoration: underline; }
+								.abs1{position:absolute;left:0px;font-weight:bold;}
+				.r1{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_01.gif) no-repeat 0 20px}
+								.abs2{position:absolute;left:20px;font-weight:bold;}
+				.r2{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_02.gif) no-repeat 0 20px}
+								.abs3{position:absolute;left:40px;font-weight:bold;}
+				.r3{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_03.gif) no-repeat 0 20px}
+								.abs4{position:absolute;left:60px;font-weight:bold;}
+				.r4{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_04.gif) no-repeat 0 20px}
+								.abs5{position:absolute;left:80px;font-weight:bold;}
+				.r5{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_05.gif) no-repeat 0 20px}
+								.abs6{position:absolute;left:100px;font-weight:bold;}
+				.r6{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_06.gif) no-repeat 0 20px}
+								.abs7{position:absolute;left:120px;font-weight:bold;}
+				.r7{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_07.gif) no-repeat 0 20px}
+								.abs8{position:absolute;left:140px;font-weight:bold;}
+				.r8{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_08.gif) no-repeat 0 20px}
+								.abs9{position:absolute;left:160px;font-weight:bold;}
+				.r9{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_09.gif) no-repeat 0 20px}
+								.abs10{position:absolute;left:180px;font-weight:bold;}
+				.r10{background: url(http://cdn.teamskeetimages.com/design/tour/ts/rating/white/rating_numbers_010.gif) no-repeat 0 20px}
+								.fl{float:left;}
+				.w20{width:20px;height:20px !important;}
+				.w10{width:10px;height:20px !important;}
+				.wresult{padding-left:10px;width:185px;_width:195px;*width:190px;text-align:left !important;color:#888;padding-top:3px;}
+			</style>
+			
+			<div class="scenerating" id="scenerating54427">
+			<style>
+						#rate1-54427li{background-position:0 0;}
+						#rate2-54427li{background-position:0 0;}
+						#rate3-54427li{background-position:0 0;}
+						#rate4-54427li{background-position:0 0;}
+						#rate5-54427li{background-position:0 0;}
+						#rate6-54427li{background-position:0 0;}
+						#rate7-54427li{background-position:0 0;}
+						#rate8-54427li{background-position:0 0;}
+						#rate9-54427li{background-position:0 0;}
+						#rate10-54427li{background-position:0 0;}
+						#rate11-54427li{background-position:0 0;}
+						#rate12-54427li{background-position:0 0;}
+						#rate13-54427li{background-position:0 0;}
+						#rate14-54427li{background-position:0 0;}
+						#rate15-54427li{background-position:0 0;}
+						</style>
+			<span style="float: left; margin: 3px 5px 0px 0px;">Rate This Trailer</span>
+			<ul id="star-list" class="fl">
+						<li class="fl w10 abs1 r1" id="rate1-54427li" onmouseover="javascript:hover1(1,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(1,54427,'tdp')"></li>
+			<li class="fl w20 r1" id="rate2-54427li" onmouseover="javascript:hover1(2,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(1,54427,'tdp')"></li>
+						<li class="fl w10 abs2 r2" id="rate3-54427li" onmouseover="javascript:hover1(3,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(2,54427,'tdp')"></li>
+			<li class="fl w20 r2" id="rate4-54427li" onmouseover="javascript:hover1(4,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(2,54427,'tdp')"></li>
+						<li class="fl w10 abs3 r3" id="rate5-54427li" onmouseover="javascript:hover1(5,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(3,54427,'tdp')"></li>
+			<li class="fl w20 r3" id="rate6-54427li" onmouseover="javascript:hover1(6,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(3,54427,'tdp')"></li>
+						<li class="fl w10 abs4 r4" id="rate7-54427li" onmouseover="javascript:hover1(7,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(4,54427,'tdp')"></li>
+			<li class="fl w20 r4" id="rate8-54427li" onmouseover="javascript:hover1(8,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(4,54427,'tdp')"></li>
+						<li class="fl w10 abs5 r5" id="rate9-54427li" onmouseover="javascript:hover1(9,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(5,54427,'tdp')"></li>
+			<li class="fl w20 r5" id="rate10-54427li" onmouseover="javascript:hover1(10,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(5,54427,'tdp')"></li>
+						<li class="fl w10 abs6 r6" id="rate11-54427li" onmouseover="javascript:hover1(11,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(6,54427,'tdp')"></li>
+			<li class="fl w20 r6" id="rate12-54427li" onmouseover="javascript:hover1(12,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(6,54427,'tdp')"></li>
+						<li class="fl w10 abs7 r7" id="rate13-54427li" onmouseover="javascript:hover1(13,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(7,54427,'tdp')"></li>
+			<li class="fl w20 r7" id="rate14-54427li" onmouseover="javascript:hover1(14,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(7,54427,'tdp')"></li>
+						<li class="fl w10 abs8 r8" id="rate15-54427li" onmouseover="javascript:hover1(15,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(8,54427,'tdp')"></li>
+			<li class="fl w20 r8" id="rate16-54427li" onmouseover="javascript:hover1(16,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(8,54427,'tdp')"></li>
+						<li class="fl w10 abs9 r9" id="rate17-54427li" onmouseover="javascript:hover1(17,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(9,54427,'tdp')"></li>
+			<li class="fl w20 r9" id="rate18-54427li" onmouseover="javascript:hover1(18,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(9,54427,'tdp')"></li>
+						<li class="fl w10 abs10 r10" id="rate19-54427li" onmouseover="javascript:hover1(19,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(10,54427,'tdp')"></li>
+			<li class="fl w20 r10" id="rate20-54427li" onmouseover="javascript:hover1(20,54427)" onmouseout="hoverout1(54427,30)" onclick="voteRatingScene(10,54427,'tdp')"></li>
+			
+			 <!-- <li class="fl wresult"></li> -->
+			</ul>
+			<span class="wresult" style="float:left;padding-left:1px;"><span style="color:#888;">7.95</span> (19000 Vote/s)</span>
+			</div>
+</div>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</td>
+				<td valign="top">
+					<div class="gray" style="text-align:justify;margin:10px;">Isabella Nice was once an innocent teen, until she showed up for her first Team Skeet shoot. From this day on she has become a wild and horny sex doll. She has a mouth that is meant for sucking cock and a tight pussy that is meant for getting drilled. What we like about her most is that she has fun while she is on camera. That is one of the most desired qualities when it comes to any starlet. Add a face full of cum and perfection is not too far away. If you want to give Isabella some love please comment below, and tell us what site you want to see her perform on next!</div>
+				</td>
+			</tr>
+			<tr style="background-color:#f9f9f9;">
+				<td colspan="2">
+				<div style="margin:10px;">
+					<div style="text-align:left;font-weight:bold;">Tags:</div>
+					<div style="text-align:left;">
+												<a href="http://www.teamskeet.com/t1/updates/?tags=1st+Time" rel="1st Time">1st Time</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=18" rel="18">18</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Adorable" rel="Adorable">Adorable</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Amatuer" rel="Amatuer">Amatuer</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Babyoil" rel="Babyoil">Babyoil</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Bed" rel="Bed">Bed</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Bedroom" rel="Bedroom">Bedroom</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Bimbo" rel="Bimbo">Bimbo</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=BJ" rel="BJ">BJ</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Blowjob" rel="Blowjob">Blowjob</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Brunette" rel="Brunette">Brunette</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Casual" rel="Casual">Casual</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Caucasian" rel="Caucasian">Caucasian</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Clothed+Sex" rel="Clothed Sex">Clothed Sex</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Cowgirl" rel="Cowgirl">Cowgirl</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Crazy" rel="Crazy">Crazy</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Cute" rel="Cute">Cute</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Deepthroat" rel="Deepthroat">Deepthroat</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Doggystyle" rel="Doggystyle">Doggystyle</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Easy" rel="Easy">Easy</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Fingering" rel="Fingering">Fingering</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Fondling" rel="Fondling">Fondling</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Fresh" rel="Fresh">Fresh</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Girl+Next+Door" rel="Girl Next Door">Girl Next Door</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Handjob" rel="Handjob">Handjob</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Hardcore" rel="Hardcore">Hardcore</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Homemade" rel="Homemade">Homemade</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Indoor" rel="Indoor">Indoor</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Jeans" rel="Jeans">Jeans</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Long+Hair" rel="Long Hair">Long Hair</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Massage" rel="Massage">Massage</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Missionary" rel="Missionary">Missionary</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Natural+Tits" rel="Natural Tits">Natural Tits</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Nerdy" rel="Nerdy">Nerdy</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=No+Condom" rel="No Condom">No Condom</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Oil" rel="Oil">Oil</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Petite" rel="Petite">Petite</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=POV" rel="POV">POV</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Sexy" rel="Sexy">Sexy</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Shaved+Pussy" rel="Shaved Pussy">Shaved Pussy</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Short" rel="Short">Short</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Slutty" rel="Slutty">Slutty</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Teen" rel="Teen">Teen</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Teens" rel="Teens">Teens</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Tiny" rel="Tiny">Tiny</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Toned" rel="Toned">Toned</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=White" rel="White">White</a>,
+												<a href="http://www.teamskeet.com/t1/updates/?tags=Wild" rel="Wild">Wild</a>,
+											</div><!-- tags -->
+				</div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div><!-- story-and-tags -->
+	<div style="margin-top: 10px; margin-left:25px;">
+				 
+		<div class="trailerimages1 firstset">
+             <ul>
+             		<li class="fl li2"><a id="fancybox_link_11" class="boxclass" href="http://cdn6.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/01.jpg" onclick="checkCookie('54427tpic_1');" title="You have viewed 0 picture/s out of 5"><img class="lazy" data-original="http://cdn1.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/01.jpg" width="170" height="128" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a></li>
+                	<li class="fl li2"><a id="fancybox_link_12" class="boxclass" href="http://cdn7.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/02.jpg" onclick="checkCookie('54427tpic_2');" title="You have viewed 0 picture/s out of 5"><img class="lazy" data-original="http://cdn2.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/02.jpg" width="170" height="128" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a></li>
+                	<li class="fl li2"><a id="fancybox_link_13" class="boxclass" href="http://cdn8.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/03.jpg" onclick="checkCookie('54427tpic_3');" title="You have viewed 0 picture/s out of 5"><img class="lazy" data-original="http://cdn3.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/03.jpg" width="170" height="128" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a></li>
+            	    <li class="fl li2"><a id="fancybox_link_14" class="boxclass" href="http://cdn9.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/04.jpg" onclick="checkCookie('54427tpic_4');" title="You have viewed 0 picture/s out of 5"><img class="lazy" data-original="http://cdn4.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/04.jpg" width="170" height="128" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a></li>
+    	            <li class="fl li2"><a id="fancybox_link_15" class="boxclass" href="http://cdn10.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/05.jpg" onclick="checkCookie('54427tpic_5');" title="You have viewed 0 picture/s out of 5"><img class="lazy" data-original="http://cdn5.teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/05.jpg" width="170" height="128" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a></li>
+			</ul>
+		</div>
+                <!-- <div class="trailerimages1 lastset">
+        	<ul>
+            	<li class="fl li2"><a id="fancybox_link_16" class="boxclass" href="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/06.jpg" onclick="checkCookie('54427tpic_6');" title="You have viewed 0 picture/s out of 5"><img src="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/06.jpg" width="170" height="128"/></a></li>
+                <li class="fl li2"><a id="fancybox_link_17" class="boxclass" href="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/07.jpg" onclick="checkCookie('54427tpic_7');" title="You have viewed 0 picture/s out of 5"><img src="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/07.jpg" width="170" height="128"/></a></li>
+                <li class="fl li2"><a id="fancybox_link_18" class="boxclass" href="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/08.jpg" onclick="checkCookie('54427tpic_8');" title="You have viewed 0 picture/s out of 5"><img src="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/08.jpg" width="170" height="128"/></a></li>
+                <li class="fl li2"><a id="fancybox_link_19" class="boxclass" href="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/09.jpg" onclick="checkCookie('54427tpic_9');" title="You have viewed 0 picture/s out of 5"><img src="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/09.jpg" width="170" height="128"/></a></li>
+                <li class="fl li2"><a id="fancybox_link_20" class="boxclass" href="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/big/10.jpg" onclick="checkCookie('54427tpic_10');" title="You have viewed 0 picture/s out of 5"><img src="teamskeetimages.com/teamskeet/tdp/isabella_nice/tours/trailers/10.jpg" width="170" height="128"/></a></li>
+			</ul>
+		</div> -->
+		        	</div>
+	<div class="clear"><br /></div>
+
+	<style>
+.info{
+	font-weight:bold;
+}
+.info a{
+	color: #0077FF;
+	font-weight: bold;
+}
+.info a:hover{
+	color: #004EA8;
+	font-weight: bold;
+}
+</style>
+		<div style="width: 98%; margin: 0px auto;">
+			<div class="jTabs ui-tabs ui-widget ui-widget-content ui-corner-all">
+			<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+				<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#Top_Scenes" title="Top Updates">Top Updates</a></li>
+				<li class="ui-state-default ui-corner-top"><a href="#Recommended_Scenes" title="Recommended Updates">Recommended Updates</a></li>
+								<li class="ui-state-default ui-corner-top"><a href="#Comments" title="Comments">Comments (0)</a></li>
+							</ul>
+			<div id="Top_Scenes" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+				<ul id="updatesList_wide" style="margin:0 auto; width:1000px; margin-left:-10px;">
+								<li class="" style="width:316px;  margin-top:10px; margin-bottom:-10px;" onmouseover="document.getElementById('top0').style.display='';" onmouseout="document.getElementById('top0').style.display='none';">
+
+                <a href="http://www.teamskeet.com/t1/trailer/view/country_biscuit_gets_sticky_gravy/zoey_laine?thumb=03.jpg" id="upd46452link"><div class="play-button-updates" style="display:none;" id="top0"></div><img class="lazy" data-original="http://cdn.teamskeetimages.com/teamskeet/tdp/zoey_laine/shared/scenes/new/03.jpg" id="upd46452" multiple_thumbnail_url="http://cdn.teamskeetimages.com/teamskeet/tdp/zoey_laine/shared/scenes/new/." width="315" height="237" style=" border: 1px solid #000; cursor:pointer;" onclick="updates_tracking('http://www.teamskeet.com/t1/trailer/view/country_biscuit_gets_sticky_gravy/zoey_laine?thumb=03.jpg'); " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a>
+
+					 <div class="info">
+                <span style="float:left; margin-left:-160px; "><a href="http://www.teamskeet.com/t1/trailer/view/country_biscuit_gets_sticky_gravy/zoey_laine?thumb=03.jpg" style="font-size: 12px;">Country Biscuit Gets Sticky Gr...</a></span>
+				<span style="float:right;margin-right:3px;margin-top:1px; color:#333;">Zoey Laine</span>
+                            <br />  <br />
+                            <span style="float:left; margin-left:-160px; margin-top:-12px; color:#999;">03/07/2016</span>
+														<span style="float:right; margin-right:3px; margin-top:-12px;  color:#999;"><a href="http://www.teamskeet.com/t1/site/?site=teens do porn " style="font-size: 11px; text-decoration:none; ">teensdoporn</a></span>    </div>
+
+				</li>
+								<li class="" style="width:316px;  margin-top:10px; margin-bottom:-10px;" onmouseover="document.getElementById('top1').style.display='';" onmouseout="document.getElementById('top1').style.display='none';">
+
+                <a href="http://www.teamskeet.com/t1/trailer/view/shy_redhead_does_porn/gwen_stark?thumb=03.jpg" id="upd45812link"><div class="play-button-updates" style="display:none;" id="top1"></div><img class="lazy" data-original="http://cdn.teamskeetimages.com/teamskeet/tdp/gwen_stark/shared/scenes/new/03.jpg" id="upd45812" multiple_thumbnail_url="http://cdn.teamskeetimages.com/teamskeet/tdp/gwen_stark/shared/scenes/new/." width="315" height="237" style=" border: 1px solid #000; cursor:pointer;" onclick="updates_tracking('http://www.teamskeet.com/t1/trailer/view/shy_redhead_does_porn/gwen_stark?thumb=03.jpg'); " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a>
+
+					 <div class="info">
+                <span style="float:left; margin-left:-160px; "><a href="http://www.teamskeet.com/t1/trailer/view/shy_redhead_does_porn/gwen_stark?thumb=03.jpg" style="font-size: 12px;">Shy Redhead Does Porn</a></span>
+				<span style="float:right;margin-right:3px;margin-top:1px; color:#333;">Gwen Stark</span>
+                            <br />  <br />
+                            <span style="float:left; margin-left:-160px; margin-top:-12px; color:#999;">01/11/2016</span>
+														<span style="float:right; margin-right:3px; margin-top:-12px;  color:#999;"><a href="http://www.teamskeet.com/t1/site/?site=teens do porn " style="font-size: 11px; text-decoration:none; ">teensdoporn</a></span>    </div>
+
+				</li>
+								<li class="" style="width:316px;  margin-top:10px; margin-bottom:-10px;" onmouseover="document.getElementById('top2').style.display='';" onmouseout="document.getElementById('top2').style.display='none';">
+
+                <a href="http://www.teamskeet.com/t1/trailer/view/slutty_teen_auditions/jenna_reid?thumb=03.jpg" id="upd46092link"><div class="play-button-updates" style="display:none;" id="top2"></div><img class="lazy" data-original="http://cdn.teamskeetimages.com/teamskeet/tdp/jenna_reid/shared/scenes/new/03.jpg" id="upd46092" multiple_thumbnail_url="http://cdn.teamskeetimages.com/teamskeet/tdp/jenna_reid/shared/scenes/new/." width="315" height="237" style=" border: 1px solid #000; cursor:pointer;" onclick="updates_tracking('http://www.teamskeet.com/t1/trailer/view/slutty_teen_auditions/jenna_reid?thumb=03.jpg'); " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></a>
+
+					 <div class="info">
+                <span style="float:left; margin-left:-160px; "><a href="http://www.teamskeet.com/t1/trailer/view/slutty_teen_auditions/jenna_reid?thumb=03.jpg" style="font-size: 12px;">Slutty Teen Auditions</a></span>
+				<span style="float:right;margin-right:3px;margin-top:1px; color:#333;">Jenna Reid</span>
+                            <br />  <br />
+                            <span style="float:left; margin-left:-160px; margin-top:-12px; color:#999;">02/08/2016</span>
+														<span style="float:right; margin-right:3px; margin-top:-12px;  color:#999;"><a href="http://www.teamskeet.com/t1/site/?site=teens do porn " style="font-size: 11px; text-decoration:none; ">teensdoporn</a></span>    </div>
+
+				</li>
+								</ul>
+				<div class="clear"></div>
+			</div>
+			<div id="Recommended_Scenes" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+				<ul id="updatesList_wide" style="margin:0 auto; width:1000px; margin-left:-10px;">
+									 <li style="width:316px; margin-top:10px; margin-bottom:-10px;" onmouseover="document.getElementById('top20').style.display='';" onmouseout="document.getElementById('top20').style.display='none';">
+
+                     <a href="http://www.teamskeet.com/t1/trailer/view/slutty_squirting_cheerleader/kimberly_brix?thumb=03.jpg" id="upd45702link"><div class="play-button-updates" style="display:none;" id="top20"></div><img src="http://cdn.teamskeetimages.com/teamskeet/ih/kimberly_brix/shared/scenes/new/01.jpg" class="updthumb" id="upd45702" multiple_thumbnail_url="http://cdn.teamskeetimages.com/teamskeet/ih/kimberly_brix/shared/scenes/new/." width="315" height="237" style=" border: 1px solid #000; cursor:pointer;" onclick="updates_tracking('http://www.teamskeet.com/t1/trailer/view/slutty_squirting_cheerleader/kimberly_brix?thumb=03.jpg'); " /></a>
+                     
+					 <div class="info">
+                <span style="float:left; margin-left:-160px;"><a href="http://www.teamskeet.com/t1/trailer/view/slutty_squirting_cheerleader/kimberly_brix?thumb=03.jpg" style="font-size: 12px;">Slutty Squirting Cheerleader</a></span>
+				<span style="float:right;margin-right:3px;margin-top:1px; color:#333;">Kimberly Brix</span>
+                            <br />  <br />
+                            <span style="float:left; margin-left:-160px; margin-top:-12px; color:#999;">01/08/2016 </span>
+							<span style="float:right; margin-right:3px; margin-top:-12px;  color:#999;"><a href="http://www.teamskeet.com/t1/site/?site=innocenthigh" style="font-size: 11px; text-decoration:none; ">Innocent High</a></span>    </div>
+					</li>
+									 <li style="width:316px; margin-top:10px; margin-bottom:-10px;" onmouseover="document.getElementById('top21').style.display='';" onmouseout="document.getElementById('top21').style.display='none';">
+
+                     <a href="http://www.teamskeet.com/t1/trailer/view/in_my_mouth/britney_beth?thumb=03.jpg" id="upd41793link"><div class="play-button-updates" style="display:none;" id="top21"></div><img src="http://cdn.teamskeetimages.com/teamskeet/hfy/britney_beth/shared/scenes/new/02.jpg" class="updthumb" id="upd41793" multiple_thumbnail_url="http://cdn.teamskeetimages.com/teamskeet/hfy/britney_beth/shared/scenes/new/." width="315" height="237" style=" border: 1px solid #000; cursor:pointer;" onclick="updates_tracking('http://www.teamskeet.com/t1/trailer/view/in_my_mouth/britney_beth?thumb=03.jpg'); " /></a>
+                     
+					 <div class="info">
+                <span style="float:left; margin-left:-160px;"><a href="http://www.teamskeet.com/t1/trailer/view/in_my_mouth/britney_beth?thumb=03.jpg" style="font-size: 12px;">In My Mouth</a></span>
+				<span style="float:right;margin-right:3px;margin-top:1px; color:#333;">Britney Beth</span>
+                            <br />  <br />
+                            <span style="float:left; margin-left:-160px; margin-top:-12px; color:#999;">02/15/2011 </span>
+							<span style="float:right; margin-right:3px; margin-top:-12px;  color:#999;"><a href="http://www.teamskeet.com/t1/site/?site=herfreshmanyear" style="font-size: 11px; text-decoration:none; ">Her Freshman Year</a></span>    </div>
+					</li>
+									 <li style="width:316px; margin-top:10px; margin-bottom:-10px;" onmouseover="document.getElementById('top22').style.display='';" onmouseout="document.getElementById('top22').style.display='none';">
+
+                     <a href="http://www.teamskeet.com/t1/trailer/view/cum_squeeze_workout__/cece_capella?thumb=03.jpg" id="upd46582link"><div class="play-button-updates" style="display:none;" id="top22"></div><img src="http://cdn.teamskeetimages.com/teamskeet/trw/cece_capella/shared/scenes/new/05.jpg" class="updthumb" id="upd46582" multiple_thumbnail_url="http://cdn.teamskeetimages.com/teamskeet/trw/cece_capella/shared/scenes/new/." width="315" height="237" style=" border: 1px solid #000; cursor:pointer;" onclick="updates_tracking('http://www.teamskeet.com/t1/trailer/view/cum_squeeze_workout__/cece_capella?thumb=03.jpg'); " /></a>
+                     
+					 <div class="info">
+                <span style="float:left; margin-left:-160px;"><a href="http://www.teamskeet.com/t1/trailer/view/cum_squeeze_workout__/cece_capella?thumb=03.jpg" style="font-size: 12px;">Cum Squeeze Workout  </a></span>
+				<span style="float:right;margin-right:3px;margin-top:1px; color:#333;">Cece Capella</span>
+                            <br />  <br />
+                            <span style="float:left; margin-left:-160px; margin-top:-12px; color:#999;">03/26/2016 </span>
+							<span style="float:right; margin-right:3px; margin-top:-12px;  color:#999;"><a href="http://www.teamskeet.com/t1/site/?site=therealworkout" style="font-size: 11px; text-decoration:none; ">The Real Workout</a></span>    </div>
+					</li>
+								</ul>
+				<div class="clear"></div>
+			</div>
+			<div id="Comments" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+								<p style="color: #FF0000;">No comments to display</p>
+								<div style="border-top: 1px solid #E6F1F8; margin-top: 5px; padding-top: 5px;">
+										<!--strong>Write a comment</strong>
+					<p style='margin: 2px 0px;'>May 4th, 2018 at 04:58 PM</p-->
+
+					<p id="comment_message" style="margin:0px auto;width:250px;border:2px solid red;background-color:#f7f7f7;display:none;padding:5px;"></p>
+										<form action="http://www.teamskeet.com/t1/trailer/view/54427/isabella_nice#Comments" method="post" id="comment_form">
+<input type="hidden" name="do" value="addcomment" />
+<input type="hidden" name="token" value="9fcc59e9f528f97ef38d0baf41c1f1b3" />
+										<div style="width: 100%; text-align: left; margin: 0px auto;">
+						<div style="padding-bottom: 5px;">							
+							<div>
+								<input id="cname" name="cname" type="text" value="" style="outline: none;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;margin-left:-2px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;border:1px solid #ccc;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;border-radius:4px; padding:3px 8px;" placeholder="Enter Name" />
+							</div>
+						</div>
+						<div>
+							<textarea id="cmt" name="cmt" style="&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;width: 98%;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;height: 50px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;padding: 8px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;resize: none;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;outline: none;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;margin-left:-2px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;border:1px solid #ccc;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;border-radius:4px;" placeholder="Enter Comment"></textarea>
+						</div>
+						<div>
+							<input id="btnsubmit" type="button" value="Post" style="&#9;&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;-moz-appearance: button;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;background: none repeat scroll 0 0 #B3B7BA;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;border: 1px solid;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;border-radius: 5px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;box-shadow: 0 1px #ECECEC inset;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;color: #333333;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;cursor: pointer;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;float: right;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;font-size: 14px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;font-weight: bold;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;margin-bottom: 10px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;margin-right: 1px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;margin-top: 7px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;padding: 5px 8px;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;text-shadow: 0 1px #E0E0E0;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;" />
+							<div style="clear:both;"></div>
+						</div>
+						
+					</div>
+									</form></div>
+			</div>
+			<script type="text/javascript">
+				function go_signup(){					
+					document.location.href = 'http://join.teamskeet.com/signup/signup.php';
+				}
+						$(function(){
+							$("#btnsubmit").click(function(e) {
+								e.preventDefault();
+								var self = this;
+								if(($('textarea#cmt').val() == "") || ($('input#cname').val()=="")){
+									window.location = "http://join.teamskeet.com/signup/signup.php";
+									/*jQuery.fancybox('&lt;div class="box"&gt;Name and Comment is required before you can send a post.&lt;/div&gt;', {
+									   'onClosed' : function() { 												  
+											return false; //is superfluous, but I put it here as a fallback		  
+										}
+									});*/
+									return false;
+								}else{
+									$('#comment_form').submit();						
+									return true;
+								}								
+							});
+						});
+					</script>
+					<!-- js to record the  FLASH  -  HI RES WMV  -  LOW RES WMV  -  MPEG  -  QUICKTIME  clicks-->
+					<script type="text/javascript">
+					$(function(){
+						$('.hooked').bind('click', function(e){
+							var target_url = $(this).attr('href');
+								$.ajax({
+									type:'post',
+									url:'http://www.teamskeet.com/t1/ajax/log_viewing_option/',
+									data:{option:$(this).text(),site:'tdp'},
+									success:function(){location.href= target_url;},
+									error:function(){ location.href= target_url; }
+								});
+							return false;
+						});
+					});
+					</script>
+					<!-- js to record the  FLASH  -  HI RES WMV  -  LOW RES WMV  -  MPEG  -  QUICKTIME  clicks end-->
+
+		</div>
+</div>
+<script type="text/javascript">
+//var girls = 'W3siZ2lybHMiOiJab2V5IExhaW5lIiwiaW1hZ2VzIjoiMDMiLCJzaXRlcyI6InRkcCIsImZvbGRlcnMiOiJ6b2V5X2xhaW5lIiwidGl0bGVzIjoiY291bnRyeV9iaXNjdWl0X2dldHNfc3RpY2t5X2dyYXZ5In0seyJnaXJscyI6Ikd3ZW4gU3RhcmsiLCJpbWFnZXMiOiIwMyIsInNpdGVzIjoidGRwIiwiZm9sZGVycyI6Imd3ZW5fc3RhcmsiLCJ0aXRsZXMiOiJzaHlfcmVkaGVhZF9kb2VzX3Bvcm4ifSx7ImdpcmxzIjoiSmVubmEgUmVpZCIsImltYWdlcyI6IjAzIiwic2l0ZXMiOiJ0ZHAiLCJmb2xkZXJzIjoiamVubmFfcmVpZCIsInRpdGxlcyI6InNsdXR0eV90ZWVuX2F1ZGl0aW9ucyJ9LHsiZ2lybHMiOiJLaW1iZXJseSBCcml4IiwiaW1hZ2VzIjoiMDMiLCJzaXRlcyI6ImloIiwiZm9sZGVycyI6ImtpbWJlcmx5X2JyaXgiLCJ0aXRsZXMiOiJzbHV0dHlfc3F1aXJ0aW5nX2NoZWVybGVhZGVyIn0seyJnaXJscyI6IkJyaXRuZXkgQmV0aCIsImltYWdlcyI6IjAzIiwic2l0ZXMiOiJoZnkiLCJmb2xkZXJzIjoiYnJpdG5leV9iZXRoIiwidGl0bGVzIjoiaW5fbXlfbW91dGgifSx7ImdpcmxzIjoiQ2VjZSBDYXBlbGxhIiwiaW1hZ2VzIjoiMDMiLCJzaXRlcyI6InRydyIsImZvbGRlcnMiOiJjZWNlX2NhcGVsbGEiLCJ0aXRsZXMiOiJjdW1fc3F1ZWV6ZV93b3Jrb3V0X18ifV0=';
+//updates_images_shown(girls);
+$(function(){
+	
+	
+    $.post("http://www.teamskeet.com/t1/ajax/pic_track?pic=10&amp;pic_viewed=0");
+	$('.boxclass').each(function(){
+		$(this).click(function(){
+			$.post("http://www.teamskeet.com/t1/ajax/pic_track?pic=0&amp;pic_viewed=1");
+		});
+	});
+});
+</script>
+</div>
+<!--=========================================== ajax dialog ===========================-->
+<div id="dialog_container">
+					    <div id="site_overlay"></div>
+					    <div id="dialog_box_container">
+					        <table class="dialog_box" border="0" cellpadding="0" cellspacing="0">
+					            <tbody><tr>
+					                <td class="box_topleft"></td>
+					                <td class="box_top"></td>
+					                <td class="box_topright"></td>
+					            </tr>
+
+					            <tr>
+					                <td class="box_left"></td>
+					                <td class="box_content" valign="top">
+										<div class="dialog_box">
+											<a id="dialog_box_close" class="close"> </a>
+											<h2 id="dialog_title">Box Title</h2>
+
+											<div class="dialog_loading"></div>
+											<div id="dialog_body">
+
+											</div>
+										</div>
+					                </td>
+					                <td class="box_right"></td>
+					            </tr>
+
+					            <tr>
+					                <td class="box_bottomleft"></td>
+					                <td class="box_bottom"></td>
+					                <td class="box_bottomright"></td>
+					            </tr>
+					        </tbody></table>
+
+					    </div>
+					</div>
+
+<!--=========================================== ajax dialog ===========================-->
+<!--Start of Footer-->
+<div id="footer">
+
+	<h1 style="margin-top: -10px; color:#fff; font-size: 2.2em; font-weight: normal;">You are just seconds away from entering our complete content library.</h1>
+
+	<div id="footjoin">
+		<a style=" cursor:pointer;" onclick="join_tracking('REAL 18 YEAR OLD PUSSY IS A CLICK AWAY!','trailer','http://join.teamskeet.com/signup/signup.php'); "> <!--mixpanel--></a>
+	</div>
+	<div id="footnav" style="text-align: center;" class="clear" align="center">
+			<a href="http://www.teamskeet.com/t1/" class="bonus_link">HOME</a>
+	  |  
+			<a href="http://www.teamskeet.com/t1/updates/" class="bonus_link ">SCENES</a>
+	  |  
+			<a href="http://www.teamskeet.com/t1/girls/" class="bonus_link ">GIRLS</a>
+	  |  
+			<a href="http://www.teamskeet.com/t1/websites/" class="bonus_link ">SITES</a>
+	  |  
+		<a href="http://members.teamskeet.com/v2/" class="bonus_link">MEMBERS</a>  |  
+		<a style=" cursor:pointer;" onclick="join_tracking('GET INSTANT ACCESS - Footer Menu','trailer','http://join.teamskeet.com/signup/signup.php'); " class="getaccess">GET INSTANT ACCESS</a></div> <!-- mixpanel -->
+		<div align="center"><span class="bonus_link"><span class="bonus_link">Follow us on:</span> <a href="http://www.twitter.com/@teamskeet" target="_blank" class="bonus_link">TWITTER</a> | <a href="http://team-skeet-blog.tumblr.com/" target="_blank" class="bonus_link">TUMBLR</a></span></div>
+		<div id="footsupport">
+			<a href="http://join.teamskeet.com/signup/signup.php" dialog_title="Send Us Your Comment" class="bonus_link">SEND US YOUR COMMENT </a> | 
+			<a href="http://join.teamskeet.com/signup/signup.php" dialog_title="Send Us Your Fantasy" class="bonus_link">SEND US YOUR FANTASY</a>
+		</div>
+		<div id="footlogo" align="center"> 
+
+			<a href="http://www.psmhelp.com/section2257" class="bonus_link">2257</a>  |  
+			<a href="http://www.psmhelp.com/tos" class="bonus_link">TERMS</a>  |  
+			<a href="http://www.psmhelp.com/privacy" class="bonus_link">PRIVACY POLICY</a>  |  
+			<a href="http://www.psmhelp.com/refund" class="bonus_link">REFUND POLICY</a>  |  
+			<a href="http://www.psmhelp.com/faq" class="bonus_link">F.A.Q.'S</a>  |  
+			<a href="http://www.psmhelp.com/technicalsupport" class="bonus_link">HELP</a>  |  
+			<a href="http://www.psmhelp.com" class="bonus_link">CUSTOMER SERVICE</a>  |  
+			<a href="http://www.psmhelp.com/billingsupport" class="bonus_link">BILLING SUPPORT</a>  |  
+			<a href="http://www.paperstreetmodels.com/" class="bonus_link">MODELS</a>  |  
+			<a href="/friends/" class="bonus_link">FRIENDS</a>  |  
+			<a href="http://www.paperstreetcash.com/" class="bonus_link">WEBMASTERS</a>  |  
+            <a href="http://m.teamskeet.com/" class="bonus_link">MOBILE</a>
+		</div>
+			<div id="footrights" align="center">
+				<p>Please visit <a href="http://cs.segpay.com">SEGPAY.COM</a> | <a href="https://epoch.com/">EPOCH.COM</a>, our authorized sales agents.</p>
+				<p>All girls appearing on this website are 18 years or older.
+					<br />
+					<a class="bonus_link" href="http://www.psmhelp.com/section2257">Click Here</a> for records required pursuant to
+					<a class="bonus_link" href="http://www.psmhelp.com/section2257">18 U.S.C. 2257 Record-Keeping Requirements Compliance Statement</a>
+					<br />Copyright © <script type="text/javascript">
+&lt;!--
+var currentTime = new Date()
+var year = currentTime.getFullYear()
+document.write(year)
+//--&gt;
+</script>2018 Paper Street Media, LLC. ALL RIGHTS RESERVED
+
+				</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	$(window).resize(function(){
+		on_window_resize();
+	});
+	on_window_resize();
+});
+
+/**
+*
+* When the window is resize or in a low-res (1024x768) monitor, hide the button link on the left side
+* @author */
+function on_window_resize()
+{
+	//if(console &amp;&amp; console.log)
+	//		console.log('viewport size is:' +  $(window).width() + 'x' + $(window).height());
+	if($(window).width() &lt;= 1100){
+		$('#dollar-link').css('visibility','hidden');
+	}
+	else{
+		$('#dollar-link').css('visibility','visible');
+	}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="http://cdn.assets.teamskeet.com/ts/css/ts_library.css" />
+<link rel="stylesheet" type="text/css" href="http://www.teamskeet.com/t1/dcss/load/singlesite?site=&amp;PAGE=trailer" />
+
+<!--db node: psdbserver -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"83e6f5b429","applicationID":"52639327","transactionName":"MwNQZRRUCxZTBUBeDgpJc1ISXAoLHTJGVggIA0AeEFwAEg==","queueTime":0,"applicationTime":164,"atts":"H0RHE1xOGEkQBxYNGhkb","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancy-bg" id="fancy-bg-n"></div><div class="fancy-bg" id="fancy-bg-ne"></div><div class="fancy-bg" id="fancy-bg-e"></div><div class="fancy-bg" id="fancy-bg-se"></div><div class="fancy-bg" id="fancy-bg-s"></div><div class="fancy-bg" id="fancy-bg-sw"></div><div class="fancy-bg" id="fancy-bg-w"></div><div class="fancy-bg" id="fancy-bg-nw"></div><div id="fancybox-inner"></div><a id="fancybox-close"><span class="fancy_showx" style="display:none;">x</span></a><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

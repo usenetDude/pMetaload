@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in providernames %}
+                <tr>
+                    <td>{{ entry['id'] }}</td>
+                    <td><a href={{ url_for('providers.provideroverview',id=entry['id']) }}>{{ entry['name'] }}</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,5 @@
+dottorrent
+jinja2
+requests
+beautifulsoup4
+pymediainfo

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<form>
+      <div class="form-group">
+        <label for="searchinput">Search</label>
+        <input type="text" class="form-control" id="searchinput" placeholder="Sitename">
+    </div>
+    <table class="table table-striped table-dark" id="list">
+        <thead>
+            <tr>
+                <th scope="col">Site</th>
+                <th scope="col">Get!</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for element in elements %}
+                <tr>
+                    <td class="sitename">{{ element['site'] }}</td>
+                    <td><a class="btn btn-primary" href="{{ url_for('providers.provideroverview', id=element['provideridx']) }}" role="button">Go to Provider!</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</form>
+{% endblock %}

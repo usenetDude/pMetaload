@@ -1,0 +1,1752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        var affiliateIDOrName =  '4';
+		var affiliateType = 'name';
+    </script>
+    <script src="//cdn.optimizely.com/js/793962087.js"></script>
+     <script src="https://use.typekit.net/ktk8bqk.js" type="text/javascript"></script>
+    <script type="text/javascript">try{Typekit.load({ async: true });}catch(e){}</script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+    <meta name="google-site-verification" content="6Bepvb4if30q0mzOwHYvKEn2bLVbrnhiuYupWRb7fEs" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//sm.naughtycdn.com/build/css/tour/app-e4fdba1d68.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="//sm.naughtycdn.com/images/tour/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="//sm.naughtycdn.com/images/tour/favicon.ico" type="image/x-icon">
+    <title>Bridgette B. &amp; Ryan Mclane in My Girlfriend&#039;s Busty Friend - Naughty America 4K Porn Videos</title>
+    <script src="//sm.naughtycdn.com/build/js/tour/slick-98cb0de1a6.js" type="text/javascript"></script>
+    <script src="//sm.naughtycdn.com/build/js/tour/js-cookie-2758bb3dae.js" type="text/javascript"></script>
+
+    <meta content="index,follow" name="robots">
+
+                
+        <meta name="description" content="Watch Bad Girl porn with pornstars Bridgette B. and Ryan Mclane. Access all porn videos starring Bridgette B. with Ass smacking and Athletic Body scenes!"/>
+        <meta name="keywords" content="Bridgette B. as Bad Girl in Bathroom Porn Video,Bathroom Porn Video with Bridgette B.,Bridgette B. Bad Girl Porn Video in Bathroom,Bridgette B. Bad Girl Porn Video My Girlfriend&#039;s Busty Friend"/>
+    
+            <link rel="alternate" media="only screen and (max-width: 640px)" href="https://mobile.naughtyamerica.com/scene/bridgette-b-24053" >
+
+        <script type="text/javascript"> var gtm_tour_scenetype = "Standard"; </script>
+
+        
+                    <link rel="canonical" href="https://tour.naughtyamerica.com/scene/bridgette-b-24053" />
+            <link rel="next" href="https://tour.naughtyamerica.com/scene/bridgette-b-24053?page=2" />
+        
+        
+        
+    
+    <script src="//sm.naughtycdn.com/build/js/tour/functions-5cb5c34b3d.js"></script>
+
+    <style>
+.default_main_header img {
+max-height:300px;
+}
+</style>
+
+        	<style> body { display : none;} </style>
+		<meta http-equiv="X-Frame-Options" content="deny">
+</head>
+
+<body>
+        <script>
+    	  if (self == top) {
+    		var theBody = document.getElementsByTagName('body')[0]
+    		theBody.style.display = "block"
+    	  } else {
+    		top.location = self.location
+    	  }
+    	</script>
+     <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8FQF7"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+        {'gtm.start': new Date().getTime(),event:'gtm.js'}
+        );var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K8FQF7');</script>
+     <!-- End Google Tag Manager -->
+
+<div id="wrapper">
+
+    <!-- TODO: Optimizely control -->
+    <div id="entire-header">
+
+				<div class="top-bar">
+                    <div class="header-left logo">
+                                      
+                        <a href="https://tour.naughtyamerica.com" title="NaughtyAmerica.com" class="na-logo-main" style="cursor:pointer;">
+	                        <img src="//sm.naughtycdn.com/images/tour/NALOGO_CLR.png" alt="Naughty America offers the best porn videos and live porn on the internet, updated daily."/>
+	                        </a>
+                                            
+	            	</div>
+
+                    <div id="header-social-media">
+                        
+                        <a href="https://twitter.com/naughtyamerica" target="_blank" title="Follow us on our official Twitter account" alt="Follow us on our official Twitter account"> 
+                            <span class="social-icons twitter"></span>
+                        </a>
+                        <a href="https://www.instagram.com/SFW_OfficialNA/" target="_blank" title="Hit us up on Instagram!" alt="Instagram icon that takes you to our official Instagram">
+                            <span class="social-icons instagram"></span>
+                        </a>
+                         <a href="https://www.snapchat.com/add/sfw_officialna" target="_blank" title="Check us out on Snapchat" alt="Check us out on Snapchat">
+                            <span class="social-icons snapchat"></span>
+                        </a>
+
+                    </div>
+                    <div class="clear"></div>
+				</div>
+					<div class="clear"></div>
+
+                <div class="default_main_header">
+				                                                              <div class="main_header">
+<a href="/vr-previews/super-sluts-featuring-hadley-viscara-and-lily-love-1680" target="_self" onclick="trackClickInGTM('HeroNATour','Clicked','Thirsty'); trackImageClickInGTM('Hero Banner Images', this);"><img src="//images.naughtycdn.com/public/images-global/headers/ss3head2.jpg">
+<a href="/vr-previews/super-sluts-featuring-katrina-jade-and-marley-brinx-1620" target="_self" onclick="trackClickInGTM('HeroNATour','Clicked','Super Sluts'); trackImageClickInGTM('Hero Banner Images', this);"><img src="//images.naughtycdn.com/public/images-global/headers/ss2head.jpg">
+<a href="/scene/ava-addams-22537" target="_self" onclick="trackClickInGTM('HeroNATour','Clicked','MIlf Ville'); trackImageClickInGTM('Hero Banner Images', this);"><img src="//images.naughtycdn.com/public/images-global/headers/avamilfville.jpg">
+<a href="/scene/victoria-june-23793" target="_self" onclick="trackClickInGTM('HeroNATour','Clicked','Huge Tits'); trackImageClickInGTM('Hero Banner Images', this);"><img src="//images.naughtycdn.com/public/images-global/headers/hugetits.jpg">
+
+
+
+</a>
+
+  
+                </div>
+                                                            </div>
+        <!-- Last update/hot topics section -->
+        
+        <!-- Header Main Navigation -->
+        <div id="header-menu">
+
+            <ul  id="menu">
+                <li id="home"><a href="https://tour.naughtyamerica.com">Home</a></li>
+                <li id="new-porn"><a href="https://tour.naughtyamerica.com/new-porn-videos">New Porn</a></li>
+                <li id="porn-finder"><a href="https://tour.naughtyamerica.com/fantasy/category">Categories</a></li>
+                <li id="top-girls" class="whats_new_blue"><a href="https://tour.naughtyamerica.com/pornstars/top-rated" title="Our Pornstars">Our Pornstars</a></li>
+                <li id="vr-porn"><a href="https://tour.naughtyamerica.com/vr-porn">Virtual Reality</a></li>
+                <li id="all-sites"><a href="https://tour.naughtyamerica.com/porn-sites"><span>Porn Sites</span></a></li>
+                <li id="login-link"><a class="login" href="https://members.naughtyamerica.com">Login</a></li>
+                <li id="join"><a href="https://tour.naughtyamerica.com/join" label="/Join_Clicks/Big_Yellow_Button/Monthly_Join" onclick="javascript:GA_link(this);">BECOME A MEMBER!</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <!-- Header Search Area -->
+        <div id="search-menu">
+            <div id="header_letters">
+                <div style="margin:0 auto;">
+                    
+                    <span class="yellow_font">Find Girls:&nbsp;</span>
+                    <span class="alphabet">
+                    						<a href="https://tour.naughtyamerica.com/pornstars/a">a</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/b">b</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/c">c</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/d">d</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/e">e</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/f">f</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/g">g</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/h">h</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/i">i</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/j">j</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/k">k</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/l">l</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/m">m</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/n">n</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/o">o</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/p">p</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/q">q</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/r">r</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/s">s</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/t">t</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/u">u</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/v">v</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/w">w</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/x">x</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/y">y</a>
+											<a href="https://tour.naughtyamerica.com/pornstars/z">z</a>
+											- <a href="https://tour.naughtyamerica.com/pornstars/alphabetical" title="Pornstars alphabetically">All</a>
+                    </span>
+                </div>
+            </div>
+            <div id="search-basic">
+                <form method="GET" action="https://tour.naughtyamerica.com/search" accept-charset="UTF-8" name="search_form">
+                    <div id="search_new" class="small_search" style="margin:0px; z-index:99; position:relative;">
+                        <input type="text" value="" name="term" onfocus="value=''" id="search-bar-with-glass" autocomplete="off"  maxlength="200"/>
+                        <a id="search-submit" name="search" title="Search for Porn Videos" href="#search" onclick="javascript: document.forms['search_form'].submit();">
+                            <div class="search-blue go_bttn" style="bottom:-2px;" type="image" name="go" title="Search" align="absmiddle"></div>
+                        </a>
+                        <div class="results" style="display:block; position:absolute; top:19px; left:-4px;"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//sm.naughtycdn.com/build/js/tour/jwplayer-895aa5f776.js"></script>
+    <div id="white-wrapper" class="scene-page">
+
+                <div id="content">
+	        
+
+            <div id="scene_vid" style="position:relative;">
+                                <div id="flashcontent">
+                    <div style="position:relative; height:507px; width:760px;">
+                        	                        <img id="play_button" src="//sm.naughtycdn.com/images/tour/play_button_new.png" width="192" alt="Play this hot porn scene trailer now.">
+						                        <img id="trailer_card" width="760" height="507" src="//images1.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2hor_760x507.jpg" alt="Bridgette B." title="Bridgette B.">
+                                            </div>
+                </div>
+                <div id="postroll-image">
+                            <div id="post-roll-container" class="post-roll-container" style="display:none;">
+	                            <style type="text/css">
+.sign_up_now {width:405px;height:auto;background:#fff; padding:10px 10px 0px 10px;}
+#join_headline {text-align:center;font-size:15px;font-weight:bold; margin-bottom:5px;}
+#join_input {margin:0 auto; }
+#join_input input{width:15px; margin-right:10px;}
+#join_input p{font-weight:normal; line-height:15px; font-size:12px;}
+#login a, p#login {color:#fff; font-family:'arial black',sans-serif;}
+#login a:hover {color:#FFE085;}
+th {font-size:14px; text-align:right}
+#join-button {background-image:url('//sm.naughtycdn.com/images/tour/join-now.png'); width:262px; height:49px;border:none; cursor:pointer;}
+.sign_up_now input{ position:relative; right:3px; height:19px;}
+.sign_up_now td {padding-bottom:5px}
+#submit_center {text-align:center;margin:0 auto;padding:5px 0px;}
+.radio_gaga {position:relative; left:99px;}
+#pay_once {font-size:10px; color:#727272; text-align:center;margin-left:40px;}
+#email_too {font-size:10px;text-align:center;}
+#pay_type {text-align:right; width:235px; font-weight:bold;}
+.post-roll-container {position: absolute;left:190px; bottom:-10px;}
+</style>
+
+    <!-- Post-Roll-Join -->
+<div class="sign_up_now ">
+    <div id="join_headline">Discreet and Secure Sign Up for NAUGHTY AMERICA</div>
+    <form method="get" action="https://tour.naughtyamerica.com/join" name="join_box" id="join_login">
+        <input type="hidden" name="custom1" value="">
+        <input type="hidden" name="apc" value="">
+        <input type="hidden" name="nats" value="4.4.8.8.1169.0.0.0.0">
+       
+        <table width="100%" cellspacing="1" cellpadding="2" style="background:#f8f9fb;">
+            <tr>
+            <th width="35%">First / Last Name:&nbsp;</th>
+                <td class="p-bottom">
+                    <input type="text" value="" size="14" name="first_name">&nbsp;<input type="text" value="" size="14" name="last_name">
+                </td>
+            </tr>
+            <tr>
+             <th>Zip / Postal Code:&nbsp;</th>
+                <td>
+                    <input type="text" value="" size="14" name="zip">
+                </td>
+            </tr>
+            <tr>
+            <th>Country:&nbsp;</th>
+                <td colspan="2">
+                    <select style="width: 233px;" name="country">
+                        <option value="0">----</option>
+                        <option value="004">Afghanistan</option>
+                        <option value="012">Algeria</option>
+                        <option value="016">American Samoa</option>
+                        <option value="020">Andorra</option>
+                        <option value="024">Angola</option>
+
+                        <option value="660">Anguilla</option>
+                        <option value="010">Antarctica</option>
+                        <option value="028">Antigua and Barbuda</option>
+                        <option value="032">Argentina</option>
+                        <option value="051">Armenia</option>
+                        <option value="533">Aruba</option>
+                        <option value="036">Australia</option>
+                        <option value="040">Austria</option>
+                        <option value="031">Azerbaijan</option>
+
+                        <option value="048">Bahrain</option>
+                        <option value="050">Bangladesh</option>
+                        <option value="052">Barbados</option>
+                        <option value="112">Belarus</option>
+                        <option value="056">Belgium</option>
+                        <option value="084">Belize</option>
+                        <option value="204">Benin</option>
+                        <option value="060">Bermuda</option>
+                        <option value="064">Bhutan</option>
+
+                        <option value="068">Bolivia</option>
+                        <option value="070">Bosnia and Herzegovina</option>
+                        <option value="072">Botswana</option>
+                        <option value="074">Bouvet Island</option>
+                        <option value="076">Brazil</option>
+                        <option value="086">British Indian Ocean Territory</option>
+                        <option value="092">British Virgin Islands</option>
+                        <option value="096">Brunei</option>
+                        <option value="100">Bulgaria</option>
+
+                        <option value="854">Burkina Faso</option>
+                        <option value="108">Burundi</option>
+                        <option value="116">Cambodia</option>
+                        <option value="120">Cameroon</option>
+                        <option value="124">Canada</option>
+                        <option value="132">Cape Verde</option>
+                        <option value="136">Cayman Islands</option>
+                        <option value="140">Central African Republic</option>
+                        <option value="148">Chad</option>
+
+                        <option value="152">Chile</option>
+                        <option value="156">China</option>
+                        <option value="162">Christmas Island</option>
+                        <option value="166">Cocos (Keeling) Islands</option>
+                        <option value="170">Colombia</option>
+                        <option value="174">Comoros</option>
+                        <option value="178">Congo (Brazzaville)</option>
+                        <option value="180">Congo (Kinshasa)</option>
+                        <option value="184">Cook Islands</option>
+
+                        <option value="188">Costa Rica</option>
+                        <option value="384">Cote D'Ivoire</option>
+                        <option value="191">Croatia</option>
+                        <option value="192">Cuba</option>
+                        <option value="196">Cyprus</option>
+                        <option value="203">Czech Republic</option>
+                        <option value="208">Denmark</option>
+                        <option value="262">Djibouti</option>
+                        <option value="212">Dominica</option>
+
+                        <option value="214">Dominican Republic</option>
+                        <option value="626">East Timor</option>
+                        <option value="218">Ecuador</option>
+                        <option value="818">Egypt</option>
+                        <option value="222">El Salvador</option>
+                        <option value="226">Equatorial Guinea</option>
+                        <option value="232">Eritrea</option>
+                        <option value="233">Estonia</option>
+                        <option value="231">Ethiopia</option>
+
+                        <option value="238">Falkland Islands (Islas Malvinas)</option>
+                        <option value="234">Faroe Islands</option>
+                        <option value="242">Fiji</option>
+                        <option value="246">Finland</option>
+                        <option value="260">Fr. Southern &amp; Antarctic Lands</option>
+                        <option value="250">France</option>
+                        <option value="254">French Guiana</option>
+                        <option value="258">French Polynesia</option>
+
+                        <option value="266">Gabon</option>
+                        <option value="268">Georgia</option>
+                        <option value="276">Germany</option>
+                        <option value="288">Ghana</option>
+                        <option value="292">Gibraltar</option>
+                        <option value="300">Greece</option>
+                        <option value="304">Greenland</option>
+                        <option value="308">Grenada</option>
+                        <option value="312">Guadeloupe</option>
+
+                        <option value="316">Guam</option>
+                        <option value="320">Guatemala</option>
+                        <option value="324">Guinea</option>
+                        <option value="624">Guinea-Bissau</option>
+                        <option value="328">Guyana</option>
+                        <option value="332">Haiti</option>
+                        <option value="334">Heard &amp; McDonald Islands</option>
+                        <option value="336">Holy See (Vatican City)</option>
+
+                        <option value="340">Honduras</option>
+                        <option value="344">Hong Kong</option>
+                        <option value="348">Hungary</option>
+                        <option value="352">Iceland</option>
+                        <option value="356">India</option>
+                        <option value="360">Indonesia</option>
+                        <option value="364">Iran</option>
+                        <option value="368">Iraq</option>
+                        <option value="372">Ireland</option>
+
+                        <option value="376">Israel</option>
+                        <option value="380">Italy</option>
+                        <option value="388">Jamaica</option>
+                        <option value="744">Jan Mayen</option>
+                        <option value="392">Japan</option>
+                        <option value="400">Jordan</option>
+                        <option value="398">Kazakhstan</option>
+                        <option value="404">Kenya</option>
+                        <option value="296">Kiribati</option>
+
+                        <option value="414">Kuwait</option>
+                        <option value="417">Kyrgyzstan</option>
+                        <option value="418">Laos</option>
+                        <option value="428">Latvia</option>
+                        <option value="422">Lebanon</option>
+                        <option value="426">Lesotho</option>
+                        <option value="430">Liberia</option>
+                        <option value="434">Libya</option>
+                        <option value="438">Liechtenstein</option>
+
+                        <option value="440">Lithuania</option>
+                        <option value="442">Luxembourg</option>
+                        <option value="446">Macau</option>
+                        <option value="807">Macedonia</option>
+                        <option value="450">Madagascar</option>
+                        <option value="454">Malawi</option>
+                        <option value="458">Malaysia</option>
+                        <option value="462">Maldives</option>
+                        <option value="466">Mali</option>
+
+                        <option value="470">Malta</option>
+                        <option value="584">Marshall Islands</option>
+                        <option value="474">Martinique</option>
+                        <option value="478">Mauritania</option>
+                        <option value="480">Mauritius</option>
+                        <option value="175">Mayotte</option>
+                        <option value="484">Mexico</option>
+                        <option value="583">Micronesia</option>
+                        <option value="498">Moldova</option>
+
+                        <option value="492">Monaco</option>
+                        <option value="496">Mongolia</option>
+                        <option value="500">Montserrat</option>
+                        <option value="504">Morocco</option>
+                        <option value="508">Mozambique</option>
+                        <option value="104">Myanmar (Burma)</option>
+                        <option value="516">Namibia</option>
+                        <option value="520">Nauru</option>
+                        <option value="524">Nepal</option>
+
+                        <option value="528">Netherlands</option>
+                        <option value="530">Netherlands Antilles</option>
+                        <option value="540">New Caledonia</option>
+                        <option value="554">New Zealand</option>
+                        <option value="558">Nicaragua</option>
+                        <option value="562">Niger</option>
+                        <option value="566">Nigeria</option>
+                        <option value="570">Niue</option>
+                        <option value="574">Norfolk Island</option>
+
+                        <option value="408">N. Korea</option>
+                        <option value="580">Northern Mariana Islands</option>
+                        <option value="578">Norway</option>
+                        <option value="512">Oman</option>
+                        <option value="586">Pakistan</option>
+                        <option value="585">Palau</option>
+                        <option value="591">Panama</option>
+                        <option value="598">Papua New Guinea</option>
+                        <option value="600">Paraguay</option>
+
+                        <option value="604">Peru</option>
+                        <option value="608">Philippines</option>
+                        <option value="612">Pitcairn Islands</option>
+                        <option value="616">Poland</option>
+                        <option value="620">Portugal</option>
+                        <option value="630">Puerto Rico</option>
+                        <option value="634">Qatar</option>
+                        <option value="638">Reunion</option>
+                        <option value="642">Romania</option>
+
+                        <option value="643">Russia</option>
+                        <option value="646">Rwanda</option>
+                        <option value="239">S. Georgia,  S. Sandwich Isles</option>
+                        <option value="654">Saint Helena</option>
+                        <option value="659">Saint Kitts and Nevis</option>
+                        <option value="662">Saint Lucia</option>
+                        <option value="666">Saint Pierre and Miquelon</option>
+                        <option value="670">Saint Vincent &amp; Grenadines</option>
+
+                        <option value="882">Samoa</option>
+                        <option value="674">San Marino</option>
+                        <option value="678">Sao Tome and Principe</option>
+                        <option value="682">Saudi Arabia</option>
+                        <option value="686">Senegal</option>
+                        <option value="690">Seychelles</option>
+                        <option value="694">Sierra Leone</option>
+                        <option value="702">Singapore</option>
+                        <option value="703">Slovakia</option>
+
+                        <option value="705">Slovenia</option>
+                        <option value="090">Solomon Islands</option>
+                        <option value="706">Somalia</option>
+                        <option value="710">S. Africa</option>
+                        <option value="410">S. Korea</option>
+                        <option value="724">Spain</option>
+                        <option value="144">Sri Lanka</option>
+                        <option value="736">Sudan</option>
+                        <option value="740">Suriname</option>
+
+                        <option value="744">Svalbard</option>
+                        <option value="748">Swaziland</option>
+                        <option value="752">Sweden</option>
+                        <option value="756">Switzerland</option>
+                        <option value="760">Syria</option>
+                        <option value="158">Taiwan</option>
+                        <option value="762">Tajikistan</option>
+                        <option value="834">Tanzania</option>
+                        <option value="764">Thailand</option>
+
+                        <option value="044">The Bahamas</option>
+                        <option value="270">The Gambia</option>
+                        <option value="768">Togo</option>
+                        <option value="772">Tokelau</option>
+                        <option value="776">Tonga</option>
+                        <option value="780">Trinidad and Tobago</option>
+                        <option value="788">Tunisia</option>
+                        <option value="792">Turkey</option>
+                        <option value="795">Turkmenistan</option>
+
+                        <option value="796">Turks and Caicos Islands</option>
+                        <option value="798">Tuvalu</option>
+                        <option value="800">Uganda</option>
+                        <option value="804">Ukraine</option>
+                        <option value="784">United Arab Emirates</option>
+                        <option value="826">United Kingdom</option>
+                        <option selected="" value="840">United States</option>
+                        <option value="858">Uruguay</option>
+                        <option value="860">Uzbekistan</option>
+
+                        <option value="548">Vanuatu</option>
+                        <option value="862">Venezuela</option>
+                        <option value="704">Vietnam</option>
+                        <option value="850">Virgin Islands</option>
+                        <option value="876">Wallis and Futuna</option>
+                        <option value="732">Western Sahara</option>
+                        <option value="887">Yemen</option>
+                        <option value="891">Yugoslavia</option>
+                        <option value="894">Zambia</option>
+
+                        <option value="716">Zimbabwe</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <th>Email:&nbsp;</th>
+                <td>
+                    <input type="text" value="" size="33" name="email">
+                </td>
+            </tr>
+        </table>
+        <div style="margin:10px auto;" id="join_input">
+			<p style="font-size:16px; text-align:center; font-weight:bold; line-height:0em; margin:5px;">Membership Options</p>
+			<label class="radio_gaga"><input type="radio" name="button" value="trial" />3 Day Membership for &#36;1.95</label><br>
+			<div class="geo_a">
+                <label class="radio_gaga"><input type="radio" name="button" value="monthly" style="font-size:12px;" checked="checked" />1 Month Membership for 24.95</label><br>
+                <label class="radio_gaga"><input type="radio" name="button" value="yearly" style="font-size:12px;" />1 Year Membership for 71.40</label><br>
+			</div>
+			<p id="email_too">You'll also recieve special offer emails sent to you by Naughty America.</p>
+			<!-- EPOCH OPTIONS -->
+			<p id="pay_type" style="font-size:16px;line-height:10px; font-weight:bold; margin:5px;">Payment Type:</p>
+			<label class="radio_gaga"><input type="radio" name="cascade" value="credit" checked="checked" />Join by Credit Card</label><br>
+			<label class="radio_gaga"><input type="radio" name="cascade" value="check" />Join By Check</label>
+
+			<div id="submit_center"><input type="submit" value="" name="submit_x" id="join-button" style="width:262px;margin:0px;"></div>
+        </div>
+    </form>
+</div><!--End Post Roll Join -->
+                            </div>
+                </div>
+
+            </div>
+
+
+            <script type="text/javascript">
+
+                    var player_config = {
+                        flashplayer: "//sm.naughtycdn.com/assets/player/player.swf",
+                        file: "https://videos.naughtycdn.com/mgbf/trailers/mgbfbridgetteryan2trailer_qt.mp4",
+                        height: '430',
+                        width: '760',
+                        stretching: 'uniform',
+                        provider: 'http',
+                        autoplay: 'false',
+                        'http.startparam': 'ms',
+                        repeat: 'never',
+                        controlbar: 'over'
+                    }
+
+                    var player = null;
+                    $(document).ready(function () {
+                        $("#flashcontent").click(function () {
+                            trackImageClickInGTM('Scene Start Card Images', this);
+	                                                		play_trailer();
+                                                    });
+                        function play_vr_trailer() {
+                            $('#flashcontent').hide();
+                            $('#vr-player').show();
+                            var element = document.querySelector("dl8-video")
+                            element.start()
+                        }
+	                    function play_trailer() {     
+                            player = jwplayer("flashcontent").setup(player_config);
+                            player.onComplete(function() {
+                                document.getElementById('postroll-image').style.display = 'block';
+                                document.getElementById('post-roll-container').style.display = 'block';
+                                document.getElementById('mediaplayer_wrapper').style.display = 'none';
+                            });
+                            player.onReady(function() {
+                                player.play();
+                            })
+		                }
+                    });
+            </script>
+            <div id="photo-set">
+                <div id="scene_img_vert">
+                    <a class="fancybox main-vert" data-lightbox="scene-lightbox" Title="Porn star Bridgette B." href="//images2.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2vert_scene_huge.jpg">
+                        <img src="//images2.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2ver_136x205.jpg" width="134"
+                                                          alt="Bridgette B. starring in Bad Girlporn videos with Ass smacking and Athletic Body" title="Bridgette B. - Centerfold"
+                                                    >
+                        <div class="label-hd"></div>
+    <div class="label-four-k"></div>
+
+
+ 
+	
+		
+	
+
+                    </a>
+                </div>
+
+                <a class="fancybox" data-lightbox="scene-lightbox" href="//images1.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2hor_big_img1.jpg"
+                   Title="Porn star Bridgette B. getting ready" rel="lightbox">
+                    <img class="scene_img_col_pad" src="//images1.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2img1_140x99.jpg" width="140"
+                         height="99" alt="Bridgette B. - Sex Position 1"
+                         title="Bridgette B. - Sex Position 1">
+                </a>
+                <a class="fancybox" data-lightbox="scene-lightbox" href="//images2.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2hor_big_img3.jpg"
+                   title="Porn star Bridgette B. giving a blowjob">
+                    <img src="//images3.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2img3_140x99.jpg" width="140" height="99"
+                         alt="Bridgette B. - Blowjob" title="Bridgette B. -  Blowjob">
+                </a>
+                <a class="fancybox" data-lightbox="scene-lightbox" href="//images5.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2hor_big_img2.jpg"
+                   title="Porn star Bridgette B. fucking hard">
+                    <img class="scene_img_col_pad" src="//images4.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2img2_140x99.jpg" width="140"
+                         height="99" alt="Bridgette B. - Sex Position 2"
+                         title="Bridgette B. - Sex Position 2"> </a>
+                <a class="fancybox" data-lightbox="scene-lightbox" href="//images1.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2hor_big_img4.jpg"
+                   title="Porn star Bridgette B. having sex">
+                    <img src="//images4.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan2/bridgetteryan2img4_140x99.jpg" width="140" height="99"
+                         alt="Bridgette B. - Sex Position 3" title="Bridgette B. - Sex Position 3">
+                </a>
+
+				<script>
+
+</script>
+                <div class="clear"></div>
+                <div id="synopsis" class="scenepage-synopsis" itemscope="" itemtype="https://schema.org/Review">
+                    <a itemprop="url" href="#">
+                        <div itemprop="name">
+                                                            <h1>
+                                                                                                                <a style="text-transform: uppercase;font-weight: 600" href="https://tour.naughtyamerica.com/pornstar/bridgette-b">Bridgette B.</a>
+                                                                                        &#38;
+                                                                                                                                                                <a style="text-transform: uppercase;font-weight: 600" href="https://tour.naughtyamerica.com/pornstar/ryan-mclane">Ryan Mclane</a>
+                                                                                                                         
+                                </h1>
+                                                    </div>
+                    </a>
+					<p>Site: <a href="https://tour.naughtyamerica.com/site/my-girlfriend-s-busty-friend" style="font-weight: 600;">My Girlfriend&#039;s Busty Friend</a></p>
+					
+                    <p class="scenedate">
+                        
+                        Apr 24, 2018</p>
+                        <p class="tour-star"><span class="star-rating full-star"></span><span class="star-rating full-star"></span><span class="star-rating full-star"></span><span class="star-rating full-star"></span><span class="star-rating default-star"></span></p>
+                    <p class="synopsis_txt" itemprop="description">Cheating can be so annoying and frustrating. I mean, you’re having an affair with your girlfriend’s good friend, but it’s really a pain in the ass when you’re all at the same party and you can’t even make the time to fuck your mistress. That’s what happens with Bridgette B. and Ryan. He’s been banging her because of her big tits, which his gf doesn’t have, and they have to constantly meet in the bathroom to start fooling around. But someone’s always knocking on the door busting their hump! Eventually, Bridgette sees Ryan’s girlfriend head out on the phone, so she and Ryan decide to move their soiree into the unknown bedroom in the other room, where they can fuck each others’ brains out!</p>
+
+                  
+                    
+
+                    <div class="scene-avg" itemprop="reviewRating" itemscope="" itemtype="https://schema.org/Rating">
+                        <meta itemprop="worstRating" content="0">
+                        <span itemprop="ratingValue"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="scene-info">
+                <p class="scenepage model-name"><span>Porn stars:</span>
+                                                                <a href="https://tour.naughtyamerica.com/pornstar/bridgette-b">Bridgette B.</a>                            ,
+                                                                                            <a href="https://tour.naughtyamerica.com/pornstar/ryan-mclane">Ryan Mclane</a>                                            
+                </p>
+
+                <div id="scenedate-container"></div>
+                <div class="site-icon">
+                    <a href="https://tour.naughtyamerica.com/site/my-girlfriend-s-busty-friend"
+                       alt="View more porn videos at Bridgette B."
+                       title="View more porn videos at Bridgette B."><img
+                                src="//sm.naughtycdn.com/assets/logos/scene_small/MGBF.png"
+                                alt="View more porn videos at Bridgette B."
+                                title="View more porn videos at Bridgette B."></a>
+                </div>
+                <p class="model-name">
+                    <span>Who:&nbsp;</span>
+                                                                <a href="https://tour.naughtyamerica.com/fantasy/bad-girl"
+                           title="Bad Girl Porn Videos"
+                           alt="Bad Girl Porn Videos">Bad Girl</a>,
+                        &nbsp;
+                                                                                            <a href="https://tour.naughtyamerica.com/fantasy/girlfriends-friend"
+                           title="Girlfriend&#039;s Friend Porn Videos"
+                           alt="Girlfriend&#039;s Friend Porn Videos">Girlfriend&#039;s Friend</a>                                                            </p>
+
+                <p class="model-name">
+                    <span>Where:&nbsp; </span>
+                                                                <a href="https://tour.naughtyamerica.com/fantasy/bathroom"
+                           title="Bathroom Porn Videos"
+                           alt="Bathroom Porn Videos">Bathroom</a>,
+                        &nbsp;
+                                                                                            <a href="https://tour.naughtyamerica.com/fantasy/bed"
+                           title="Bed Porn Videos"
+                           alt="Bed Porn Videos">Bed</a>,
+                        &nbsp;
+                                                                                            <a href="https://tour.naughtyamerica.com/fantasy/bedroom"
+                           title="Bedroom Porn Videos"
+                           alt="Bedroom Porn Videos">Bedroom</a>                                                            </p>
+
+                <p class="model-name">
+                    <span>Categories:&nbsp; </span>
+                                                                <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/ass-smacking-porn-videos"
+                           title="Ass smacking Porn Videos"
+                           alt="Ass smacking Porn Videos">Ass smacking</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/athletic-body-porn-videos"
+                           title="Athletic Body Porn Videos"
+                           alt="Athletic Body Porn Videos">Athletic Body</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/ball-licking-porn-videos"
+                           title="Ball licking Porn Videos"
+                           alt="Ball licking Porn Videos">Ball licking</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/big-dick-porn-videos"
+                           title="Big Dick Porn Videos"
+                           alt="Big Dick Porn Videos">Big Dick</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/big-fake-tits-porn-videos"
+                           title="Big Fake Tits Porn Videos"
+                           alt="Big Fake Tits Porn Videos">Big Fake Tits</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/big-tits-porn-videos"
+                           title="Big Tits Porn Videos"
+                           alt="Big Tits Porn Videos">Big Tits</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/blonde-porn-videos"
+                           title="Blonde Porn Videos"
+                           alt="Blonde Porn Videos">Blonde</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/blow-job-porn-videos"
+                           title="Blow Job Porn Videos"
+                           alt="Blow Job Porn Videos">Blow Job</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/brown-eyes-porn-videos"
+                           title="Brown Eyes Porn Videos"
+                           alt="Brown Eyes Porn Videos">Brown Eyes</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/cum-on-tits-porn-videos"
+                           title="Cum on Tits Porn Videos"
+                           alt="Cum on Tits Porn Videos">Cum on Tits</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/deepthroating-porn-videos"
+                           title="Deepthroating Porn Videos"
+                           alt="Deepthroating Porn Videos">Deepthroating</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/fake-tits-porn-videos"
+                           title="Fake Tits Porn Videos"
+                           alt="Fake Tits Porn Videos">Fake Tits</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/hand-job-porn-videos"
+                           title="Hand Job Porn Videos"
+                           alt="Hand Job Porn Videos">Hand Job</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/high-heels-porn-videos"
+                           title="High Heels Porn Videos"
+                           alt="High Heels Porn Videos">High Heels</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/latina-porn-videos"
+                           title="Latina Porn Videos"
+                           alt="Latina Porn Videos">Latina</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/medium-ass-porn-videos"
+                           title="Medium Ass Porn Videos"
+                           alt="Medium Ass Porn Videos">Medium Ass</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/outie-pussy-porn-videos"
+                           title="Outie Pussy Porn Videos"
+                           alt="Outie Pussy Porn Videos">Outie Pussy</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/pearl-necklace-porn-videos"
+                           title="Pearl Necklace Porn Videos"
+                           alt="Pearl Necklace Porn Videos">Pearl Necklace</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/shaved-porn-videos"
+                           title="Shaved Porn Videos"
+                           alt="Shaved Porn Videos">Shaved</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/straight-porn-videos"
+                           title="Straight Porn Videos"
+                           alt="Straight Porn Videos">Straight</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/tattoos-porn-videos"
+                           title="Tattoos Porn Videos"
+                           alt="Tattoos Porn Videos">Tattoos</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/titty-fucking-porn-videos"
+                           title="Titty Fucking Porn Videos"
+                           alt="Titty Fucking Porn Videos">Titty Fucking</a>,
+                                                                                            <a class="cat-tag" href="https://tour.naughtyamerica.com/fantasy/young-porn-videos"
+                           title="Young Porn Videos"
+                           alt="Young Porn Videos">Young</a>                                                            </p>
+                <!-- AVERAGE SCENE RATING -->
+                            </div>
+
+            <div class="clear"></div>
+                        <div class="content-headline" style="margin-bottom:10px;" id="all">
+                <h2 style="width:400px;">More porn videos with
+                                                                        <a href="https://tour.naughtyamerica.com/pornstar/bridgette-b">Bridgette B.</a>
+                                                            </h2>
+                <span style="float:right; margin-right:25px; position:relative; top:-32px;"></span>
+            </div>
+            <div class="container">
+
+                <div class="more_porn_videos_content">
+    <div class="scene_vert_img_lrg">
+        
+        <p>
+	        <a href="https://tour.naughtyamerica.com/scene/bridgette-b-luna-star-23967">
+	        	<img src="//images3.naughtycdn.com/datana/upload/source/nam/bridgettelunaryan/bridgettelunaryanvert_190x256.jpg" width="190" height="256"  alt="Athlete &amp; Bad Girl Porn Video with Ass smacking and Athletic Body scenes" >
+	        	<div class="vr-icon"></div>
+
+
+ 
+	
+		
+		        </a>
+        </p>
+
+
+        <a style="text-decoration:none;" href="https://tour.naughtyamerica.com/site/naughty-america"></a>
+        
+
+
+    </div>
+
+    <div id="scene_horz_img_lrg">
+        <p class="scene_horz_img_lrg_pad">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-luna-star-23967">
+                <img src="//images4.naughtycdn.com/datana/upload/source/nam/bridgettelunaryan/bridgettelunaryanimg1_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Luna Star &amp; Ryan Driller in Naughty America">
+            </a>
+        </p>
+
+        <p>
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-luna-star-23967"><img
+                        src="//images1.naughtycdn.com/datana/upload/source/nam/bridgettelunaryan/bridgettelunaryanimg3_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Luna Star &amp; Ryan Driller in Naughty America"></a>
+        </p>
+    </div>
+
+    <div id="scene_info" style="padding-left:16px;">
+        <p class="model-name-large">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-luna-star-23967">
+                                    Bridgette B. &amp; Luna Star &amp; Ryan Driller in Naughty America
+                            </a>
+        </p>
+		        <p class="short-description">Luna Star and Bridgette B are thirsty, and they’re about to show you just how parched they are.  No leg day, no problem!  You skip...</p>
+		        <div class="site-icon">
+            <a href="https://tour.naughtyamerica.com/site/naughty-america"><img
+                        src="//sm.naughtycdn.com/assets/logos/scene_small/NAM.png"></a>
+        </div>
+		        <p class="model-name">Who:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/athlete" title="Athlete Porn Videos"
+                   alt="Athlete Porn Videos">Athlete</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bad-girl" title="Bad Girl Porn Videos"
+                   alt="Bad Girl Porn Videos">Bad Girl</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/coach" title="Coach Porn Videos"
+                   alt="Coach Porn Videos">Coach</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/trainer" title="Trainer Porn Videos"
+                   alt="Trainer Porn Videos">Trainer</a>                                    </p>
+
+        <p class="model-name">Where:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/gym" title="Gym Porn Videos"
+                   alt="Gym Porn Videos">Gym</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/locker-room" title="Locker Room Porn Videos"
+                   alt="Locker Room Porn Videos">Locker Room</a>                                    </p>
+
+        <p class="model-name">Categories:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/ass-smacking-porn-videos" title="Ass smacking Porn Videos"
+                   alt="Ass smacking Porn Videos">Ass smacking</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/athletic-body-porn-videos" title="Athletic Body Porn Videos"
+                   alt="Athletic Body Porn Videos">Athletic Body</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/ball-licking-porn-videos" title="Ball licking Porn Videos"
+                   alt="Ball licking Porn Videos">Ball licking</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bgg-porn-videos" title="BGG Porn Videos"
+                   alt="BGG Porn Videos">BGG</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-ass-porn-videos" title="Big Ass Porn Videos"
+                   alt="Big Ass Porn Videos">Big Ass</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-dick-porn-videos" title="Big Dick Porn Videos"
+                   alt="Big Dick Porn Videos">Big Dick</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-fake-tits-porn-videos" title="Big Fake Tits Porn Videos"
+                   alt="Big Fake Tits Porn Videos">Big Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-tits-porn-videos" title="Big Tits Porn Videos"
+                   alt="Big Tits Porn Videos">Big Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blonde-porn-videos" title="Blonde Porn Videos"
+                   alt="Blonde Porn Videos">Blonde</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blow-job-porn-videos" title="Blow Job Porn Videos"
+                   alt="Blow Job Porn Videos">Blow Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/brown-eyes-porn-videos" title="Brown Eyes Porn Videos"
+                   alt="Brown Eyes Porn Videos">Brown Eyes</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bubble-butt-porn-videos" title="Bubble Butt Porn Videos"
+                   alt="Bubble Butt Porn Videos">Bubble Butt</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/cum-on-ass-porn-videos" title="Cum on Ass Porn Videos"
+                   alt="Cum on Ass Porn Videos">Cum on Ass</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/cum-on-tits-porn-videos" title="Cum on Tits Porn Videos"
+                   alt="Cum on Tits Porn Videos">Cum on Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/deepthroating-porn-videos" title="Deepthroating Porn Videos"
+                   alt="Deepthroating Porn Videos">Deepthroating</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/fake-tits-porn-videos" title="Fake Tits Porn Videos"
+                   alt="Fake Tits Porn Videos">Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/gg-porn-videos" title="GG Porn Videos"
+                   alt="GG Porn Videos">GG</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/girl-on-girl-porn-videos" title="Girl on Girl Porn Videos"
+                   alt="Girl on Girl Porn Videos">Girl on Girl</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/hand-job-porn-videos" title="Hand Job Porn Videos"
+                   alt="Hand Job Porn Videos">Hand Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/latina-porn-videos" title="Latina Porn Videos"
+                   alt="Latina Porn Videos">Latina</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/medium-ass-porn-videos" title="Medium Ass Porn Videos"
+                   alt="Medium Ass Porn Videos">Medium Ass</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/outie-pussy-porn-videos" title="Outie Pussy Porn Videos"
+                   alt="Outie Pussy Porn Videos">Outie Pussy</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/pearl-necklace-porn-videos" title="Pearl Necklace Porn Videos"
+                   alt="Pearl Necklace Porn Videos">Pearl Necklace</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/petite-porn-videos" title="Petite Porn Videos"
+                   alt="Petite Porn Videos">Petite</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/shaved-porn-videos" title="Shaved Porn Videos"
+                   alt="Shaved Porn Videos">Shaved</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/swallowing-porn-videos" title="Swallowing Porn Videos"
+                   alt="Swallowing Porn Videos">Swallowing</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/tattoos-porn-videos" title="Tattoos Porn Videos"
+                   alt="Tattoos Porn Videos">Tattoos</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/threesome-porn-videos" title="Threesome Porn Videos"
+                   alt="Threesome Porn Videos">Threesome</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/threesome-bgg-porn-videos" title="Threesome BGG Porn Videos"
+                   alt="Threesome BGG Porn Videos">Threesome BGG</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/titty-fucking-porn-videos" title="Titty Fucking Porn Videos"
+                   alt="Titty Fucking Porn Videos">Titty Fucking</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/virtual-reality-porn-videos" title="Virtual Reality Porn Videos"
+                   alt="Virtual Reality Porn Videos">Virtual Reality</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/vr-porn-porn-videos" title="VR Porn Porn Videos"
+                   alt="VR Porn Porn Videos">VR Porn</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/young-porn-videos" title="Young Porn Videos"
+                   alt="Young Porn Videos">Young</a>                                    </p>
+		        <p class="model-name">Released: Mar 28, 2018</p>
+
+        <p class="watch-video"><a class="model-name-large"
+                                  href="https://tour.naughtyamerica.com/scene/bridgette-b-luna-star-23967"
+                                  title="">Watch This Porn Video</a></p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="underline"></div>
+</div>
+
+<div class="more_porn_videos_content">
+    <div class="scene_vert_img_lrg">
+        
+        <p>
+	        <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23823">
+	        	<img src="//images4.naughtycdn.com/datana/upload/source/mfhg/bridgetterion/bridgetterionvert_190x256.jpg" width="190" height="256"  alt="Bad Girl &amp; Friend&#039;s Girlfriend Porn Video with Ball licking and Big Fake Tits scenes" >
+	        	<div class="label-hd"></div>
+    <div class="label-four-k"></div>
+
+
+ 
+	
+		
+		        </a>
+        </p>
+
+
+        <a style="text-decoration:none;" href="https://tour.naughtyamerica.com/site/my-friend-s-hot-girl"></a>
+        
+
+
+    </div>
+
+    <div id="scene_horz_img_lrg">
+        <p class="scene_horz_img_lrg_pad">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23823">
+                <img src="//images3.naughtycdn.com/datana/upload/source/mfhg/bridgetterion/bridgetterionimg1_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Rion King in My Friend&#039;s Hot Girl">
+            </a>
+        </p>
+
+        <p>
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23823"><img
+                        src="//images4.naughtycdn.com/datana/upload/source/mfhg/bridgetterion/bridgetterionimg3_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Rion King in My Friend&#039;s Hot Girl"></a>
+        </p>
+    </div>
+
+    <div id="scene_info" style="padding-left:16px;">
+        <p class="model-name-large">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23823">
+                                    Bridgette B. &amp; Rion King in My Friend&#039;s Hot Girl
+                            </a>
+        </p>
+		        <p class="short-description">It’s Valentine’s Day, and Bridgette B. can’t wait for her boyfriend to arrive home from his business trip and take her out! That i...</p>
+		        <div class="site-icon">
+            <a href="https://tour.naughtyamerica.com/site/my-friend-s-hot-girl"><img
+                        src="//sm.naughtycdn.com/assets/logos/scene_small/MFHG.png"></a>
+        </div>
+		        <p class="model-name">Who:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/bad-girl" title="Bad Girl Porn Videos"
+                   alt="Bad Girl Porn Videos">Bad Girl</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/friends-girlfriend" title="Friend&#039;s Girlfriend Porn Videos"
+                   alt="Friend&#039;s Girlfriend Porn Videos">Friend&#039;s Girlfriend</a>                                    </p>
+
+        <p class="model-name">Where:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/bed" title="Bed Porn Videos"
+                   alt="Bed Porn Videos">Bed</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bedroom" title="Bedroom Porn Videos"
+                   alt="Bedroom Porn Videos">Bedroom</a>                                    </p>
+
+        <p class="model-name">Categories:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/ball-licking-porn-videos" title="Ball licking Porn Videos"
+                   alt="Ball licking Porn Videos">Ball licking</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-fake-tits-porn-videos" title="Big Fake Tits Porn Videos"
+                   alt="Big Fake Tits Porn Videos">Big Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-tits-porn-videos" title="Big Tits Porn Videos"
+                   alt="Big Tits Porn Videos">Big Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blonde-porn-videos" title="Blonde Porn Videos"
+                   alt="Blonde Porn Videos">Blonde</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blow-job-porn-videos" title="Blow Job Porn Videos"
+                   alt="Blow Job Porn Videos">Blow Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/brown-eyes-porn-videos" title="Brown Eyes Porn Videos"
+                   alt="Brown Eyes Porn Videos">Brown Eyes</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/cum-on-tits-porn-videos" title="Cum on Tits Porn Videos"
+                   alt="Cum on Tits Porn Videos">Cum on Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/curvy-porn-videos" title="Curvy Porn Videos"
+                   alt="Curvy Porn Videos">Curvy</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/curvy-woman-porn-videos" title="Curvy Woman Porn Videos"
+                   alt="Curvy Woman Porn Videos">Curvy Woman</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/deepthroating-porn-videos" title="Deepthroating Porn Videos"
+                   alt="Deepthroating Porn Videos">Deepthroating</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/fake-tits-porn-videos" title="Fake Tits Porn Videos"
+                   alt="Fake Tits Porn Videos">Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/hand-job-porn-videos" title="Hand Job Porn Videos"
+                   alt="Hand Job Porn Videos">Hand Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/high-heels-porn-videos" title="High Heels Porn Videos"
+                   alt="High Heels Porn Videos">High Heels</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/latina-porn-videos" title="Latina Porn Videos"
+                   alt="Latina Porn Videos">Latina</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/lingerie-porn-videos" title="Lingerie Porn Videos"
+                   alt="Lingerie Porn Videos">Lingerie</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/medium-ass-porn-videos" title="Medium Ass Porn Videos"
+                   alt="Medium Ass Porn Videos">Medium Ass</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/outie-pussy-porn-videos" title="Outie Pussy Porn Videos"
+                   alt="Outie Pussy Porn Videos">Outie Pussy</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/pearl-necklace-porn-videos" title="Pearl Necklace Porn Videos"
+                   alt="Pearl Necklace Porn Videos">Pearl Necklace</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/shaved-porn-videos" title="Shaved Porn Videos"
+                   alt="Shaved Porn Videos">Shaved</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/straight-porn-videos" title="Straight Porn Videos"
+                   alt="Straight Porn Videos">Straight</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/tattoos-porn-videos" title="Tattoos Porn Videos"
+                   alt="Tattoos Porn Videos">Tattoos</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/titty-fucking-porn-videos" title="Titty Fucking Porn Videos"
+                   alt="Titty Fucking Porn Videos">Titty Fucking</a>                                    </p>
+		        <p class="model-name">Released: Feb 14, 2018</p>
+
+        <p class="watch-video"><a class="model-name-large"
+                                  href="https://tour.naughtyamerica.com/scene/bridgette-b-23823"
+                                  title="">Watch This Porn Video</a></p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="underline"></div>
+</div>
+
+<div class="more_porn_videos_content">
+    <div class="scene_vert_img_lrg">
+        
+        <p>
+	        <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23499">
+	        	<img src="//images4.naughtycdn.com/datana/upload/source/nam/bridgettejohnny/bridgettejohnnyvert_190x256.jpg" width="190" height="256"  alt="Girlfriend Porn Video with 69 and Athletic Body scenes" >
+	        	<div class="label-hd"></div>
+    <div class="label-four-k"></div>
+
+
+ 
+	
+		
+		        </a>
+        </p>
+
+
+        <a style="text-decoration:none;" href="https://tour.naughtyamerica.com/site/naughty-america"></a>
+        
+
+
+    </div>
+
+    <div id="scene_horz_img_lrg">
+        <p class="scene_horz_img_lrg_pad">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23499">
+                <img src="//images3.naughtycdn.com/datana/upload/source/nam/bridgettejohnny/bridgettejohnnyimg1_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Johnny Sins in Naughty America">
+            </a>
+        </p>
+
+        <p>
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23499"><img
+                        src="//images4.naughtycdn.com/datana/upload/source/nam/bridgettejohnny/bridgettejohnnyimg3_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Johnny Sins in Naughty America"></a>
+        </p>
+    </div>
+
+    <div id="scene_info" style="padding-left:16px;">
+        <p class="model-name-large">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23499">
+                                    Bridgette B. &amp; Johnny Sins in Naughty America
+                            </a>
+        </p>
+		        <p class="short-description">It’s Black Friday, and Bridgette B. and her husband Johnny are looking for deals! They want to save on sales so much that they’re...</p>
+		        <div class="site-icon">
+            <a href="https://tour.naughtyamerica.com/site/naughty-america"><img
+                        src="//sm.naughtycdn.com/assets/logos/scene_small/NAM.png"></a>
+        </div>
+		        <p class="model-name">Who:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/girlfriend" title="Girlfriend Porn Videos"
+                   alt="Girlfriend Porn Videos">Girlfriend</a>                                    </p>
+
+        <p class="model-name">Where:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/outdoors" title="Outdoors Porn Videos"
+                   alt="Outdoors Porn Videos">Outdoors</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/tent" title="Tent Porn Videos"
+                   alt="Tent Porn Videos">Tent</a>                                    </p>
+
+        <p class="model-name">Categories:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/69-porn-videos" title="69 Porn Videos"
+                   alt="69 Porn Videos">69</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/athletic-body-porn-videos" title="Athletic Body Porn Videos"
+                   alt="Athletic Body Porn Videos">Athletic Body</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-fake-tits-porn-videos" title="Big Fake Tits Porn Videos"
+                   alt="Big Fake Tits Porn Videos">Big Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blonde-porn-videos" title="Blonde Porn Videos"
+                   alt="Blonde Porn Videos">Blonde</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blow-job-porn-videos" title="Blow Job Porn Videos"
+                   alt="Blow Job Porn Videos">Blow Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bubble-butt-porn-videos" title="Bubble Butt Porn Videos"
+                   alt="Bubble Butt Porn Videos">Bubble Butt</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/cum-on-stomach-porn-videos" title="Cum on Stomach Porn Videos"
+                   alt="Cum on Stomach Porn Videos">Cum on Stomach</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/curvy-porn-videos" title="Curvy Porn Videos"
+                   alt="Curvy Porn Videos">Curvy</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/curvy-woman-porn-videos" title="Curvy Woman Porn Videos"
+                   alt="Curvy Woman Porn Videos">Curvy Woman</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/deepthroating-porn-videos" title="Deepthroating Porn Videos"
+                   alt="Deepthroating Porn Videos">Deepthroating</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/euro-porn-videos" title="Euro Porn Videos"
+                   alt="Euro Porn Videos">Euro</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/fake-tits-porn-videos" title="Fake Tits Porn Videos"
+                   alt="Fake Tits Porn Videos">Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/foreign-accent-porn-videos" title="Foreign Accent Porn Videos"
+                   alt="Foreign Accent Porn Videos">Foreign Accent</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/latina-porn-videos" title="Latina Porn Videos"
+                   alt="Latina Porn Videos">Latina</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/outie-pussy-porn-videos" title="Outie Pussy Porn Videos"
+                   alt="Outie Pussy Porn Videos">Outie Pussy</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/shaved-porn-videos" title="Shaved Porn Videos"
+                   alt="Shaved Porn Videos">Shaved</a>                                    </p>
+		        <p class="model-name">Released: Nov 24, 2017</p>
+
+        <p class="watch-video"><a class="model-name-large"
+                                  href="https://tour.naughtyamerica.com/scene/bridgette-b-23499"
+                                  title="">Watch This Porn Video</a></p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="underline"></div>
+</div>
+
+<div class="more_porn_videos_content">
+    <div class="scene_vert_img_lrg">
+        
+        <p>
+	        <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23453">
+	        	<img src="//images4.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan/bridgetteryanvert_190x256.jpg" width="190" height="256"  alt="Girlfriend&#039;s Friend &amp; Trainer Porn Video with Ass smacking and Athletic Body scenes" >
+	        	<div class="label-hd"></div>
+    <div class="label-four-k"></div>
+
+
+ 
+	
+		
+		        </a>
+        </p>
+
+
+        <a style="text-decoration:none;" href="https://tour.naughtyamerica.com/site/my-girlfriend-s-busty-friend"></a>
+        
+
+
+    </div>
+
+    <div id="scene_horz_img_lrg">
+        <p class="scene_horz_img_lrg_pad">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23453">
+                <img src="//images2.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan/bridgetteryanimg1_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Ryan Mclane in My Girlfriend&#039;s Busty Friend">
+            </a>
+        </p>
+
+        <p>
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23453"><img
+                        src="//images5.naughtycdn.com/datana/upload/source/mgbf/bridgetteryan/bridgetteryanimg3_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Ryan Mclane in My Girlfriend&#039;s Busty Friend"></a>
+        </p>
+    </div>
+
+    <div id="scene_info" style="padding-left:16px;">
+        <p class="model-name-large">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23453">
+                                    Bridgette B. &amp; Ryan Mclane in My Girlfriend&#039;s Busty Friend
+                            </a>
+        </p>
+		        <p class="short-description">Ruh-roh! Ryan’s girlfriend Olive just finished a yoga class with her friend Bridgette B. and brought her over to the house for lun...</p>
+		        <div class="site-icon">
+            <a href="https://tour.naughtyamerica.com/site/my-girlfriend-s-busty-friend"><img
+                        src="//sm.naughtycdn.com/assets/logos/scene_small/MGBF.png"></a>
+        </div>
+		        <p class="model-name">Who:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/girlfriends-friend" title="Girlfriend&#039;s Friend Porn Videos"
+                   alt="Girlfriend&#039;s Friend Porn Videos">Girlfriend&#039;s Friend</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/trainer" title="Trainer Porn Videos"
+                   alt="Trainer Porn Videos">Trainer</a>                                    </p>
+
+        <p class="model-name">Where:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/floor" title="Floor Porn Videos"
+                   alt="Floor Porn Videos">Floor</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/gym-equipment" title="Gym Equipment Porn Videos"
+                   alt="Gym Equipment Porn Videos">Gym Equipment</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/hallway" title="Hallway Porn Videos"
+                   alt="Hallway Porn Videos">Hallway</a>                                    </p>
+
+        <p class="model-name">Categories:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/ass-smacking-porn-videos" title="Ass smacking Porn Videos"
+                   alt="Ass smacking Porn Videos">Ass smacking</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/athletic-body-porn-videos" title="Athletic Body Porn Videos"
+                   alt="Athletic Body Porn Videos">Athletic Body</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-ass-porn-videos" title="Big Ass Porn Videos"
+                   alt="Big Ass Porn Videos">Big Ass</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-fake-tits-porn-videos" title="Big Fake Tits Porn Videos"
+                   alt="Big Fake Tits Porn Videos">Big Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blonde-porn-videos" title="Blonde Porn Videos"
+                   alt="Blonde Porn Videos">Blonde</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bubble-butt-porn-videos" title="Bubble Butt Porn Videos"
+                   alt="Bubble Butt Porn Videos">Bubble Butt</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/cum-on-tits-porn-videos" title="Cum on Tits Porn Videos"
+                   alt="Cum on Tits Porn Videos">Cum on Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/fake-tits-porn-videos" title="Fake Tits Porn Videos"
+                   alt="Fake Tits Porn Videos">Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/latina-porn-videos" title="Latina Porn Videos"
+                   alt="Latina Porn Videos">Latina</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/outie-pussy-porn-videos" title="Outie Pussy Porn Videos"
+                   alt="Outie Pussy Porn Videos">Outie Pussy</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/pearl-necklace-porn-videos" title="Pearl Necklace Porn Videos"
+                   alt="Pearl Necklace Porn Videos">Pearl Necklace</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/shaved-porn-videos" title="Shaved Porn Videos"
+                   alt="Shaved Porn Videos">Shaved</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/titty-fucking-porn-videos" title="Titty Fucking Porn Videos"
+                   alt="Titty Fucking Porn Videos">Titty Fucking</a>                                    </p>
+		        <p class="model-name">Released: Nov 10, 2017</p>
+
+        <p class="watch-video"><a class="model-name-large"
+                                  href="https://tour.naughtyamerica.com/scene/bridgette-b-23453"
+                                  title="">Watch This Porn Video</a></p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="underline"></div>
+</div>
+
+<div class="more_porn_videos_content">
+    <div class="scene_vert_img_lrg">
+        
+        <p>
+	        <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23295">
+	        	<img src="//images2.naughtycdn.com/datana/upload/source/ihw/bridgettepreston/bridgetteprestonvert_190x256.jpg" width="190" height="256"  alt="Bad Girl &amp; Client Porn Video with Big Ass and Big Fake Tits scenes" >
+	        	<div class="label-hd"></div>
+    <div class="label-four-k"></div>
+
+
+ 
+	
+		
+		        </a>
+        </p>
+
+
+        <a style="text-decoration:none;" href="https://tour.naughtyamerica.com/site/i-have-a-wife"></a>
+        
+
+
+    </div>
+
+    <div id="scene_horz_img_lrg">
+        <p class="scene_horz_img_lrg_pad">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23295">
+                <img src="//images4.naughtycdn.com/datana/upload/source/ihw/bridgettepreston/bridgetteprestonimg1_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Preston Parker in I Have a Wife">
+            </a>
+        </p>
+
+        <p>
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23295"><img
+                        src="//images5.naughtycdn.com/datana/upload/source/ihw/bridgettepreston/bridgetteprestonimg3_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Preston Parker in I Have a Wife"></a>
+        </p>
+    </div>
+
+    <div id="scene_info" style="padding-left:16px;">
+        <p class="model-name-large">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23295">
+                                    Bridgette B. &amp; Preston Parker in I Have a Wife
+                            </a>
+        </p>
+		        <p class="short-description">Hey water man! Bridgette B. needs her water jugs filled, but not before she wants to the water-delivery guy to fill her with his d...</p>
+		        <div class="site-icon">
+            <a href="https://tour.naughtyamerica.com/site/i-have-a-wife"><img
+                        src="//sm.naughtycdn.com/assets/logos/scene_small/IHW.png"></a>
+        </div>
+		        <p class="model-name">Who:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/bad-girl" title="Bad Girl Porn Videos"
+                   alt="Bad Girl Porn Videos">Bad Girl</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/client" title="Client Porn Videos"
+                   alt="Client Porn Videos">Client</a>                                    </p>
+
+        <p class="model-name">Where:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/bar-stool" title="Bar stool Porn Videos"
+                   alt="Bar stool Porn Videos">Bar stool</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/kitchen" title="Kitchen Porn Videos"
+                   alt="Kitchen Porn Videos">Kitchen</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/kitchen-counter" title="Kitchen counter Porn Videos"
+                   alt="Kitchen counter Porn Videos">Kitchen counter</a>                                    </p>
+
+        <p class="model-name">Categories:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/big-ass-porn-videos" title="Big Ass Porn Videos"
+                   alt="Big Ass Porn Videos">Big Ass</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-fake-tits-porn-videos" title="Big Fake Tits Porn Videos"
+                   alt="Big Fake Tits Porn Videos">Big Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-tits-porn-videos" title="Big Tits Porn Videos"
+                   alt="Big Tits Porn Videos">Big Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blow-job-porn-videos" title="Blow Job Porn Videos"
+                   alt="Blow Job Porn Videos">Blow Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/brown-eyes-porn-videos" title="Brown Eyes Porn Videos"
+                   alt="Brown Eyes Porn Videos">Brown Eyes</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bubble-butt-porn-videos" title="Bubble Butt Porn Videos"
+                   alt="Bubble Butt Porn Videos">Bubble Butt</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/facial-porn-videos" title="Facial Porn Videos"
+                   alt="Facial Porn Videos">Facial</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/fake-tits-porn-videos" title="Fake Tits Porn Videos"
+                   alt="Fake Tits Porn Videos">Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/high-heels-porn-videos" title="High Heels Porn Videos"
+                   alt="High Heels Porn Videos">High Heels</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/latina-porn-videos" title="Latina Porn Videos"
+                   alt="Latina Porn Videos">Latina</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/mature-porn-videos" title="Mature Porn Videos"
+                   alt="Mature Porn Videos">Mature</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/shaved-porn-videos" title="Shaved Porn Videos"
+                   alt="Shaved Porn Videos">Shaved</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/tattoos-porn-videos" title="Tattoos Porn Videos"
+                   alt="Tattoos Porn Videos">Tattoos</a>                                    </p>
+		        <p class="model-name">Released: Sep 28, 2017</p>
+
+        <p class="watch-video"><a class="model-name-large"
+                                  href="https://tour.naughtyamerica.com/scene/bridgette-b-23295"
+                                  title="">Watch This Porn Video</a></p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="underline"></div>
+</div>
+
+<div class="more_porn_videos_content">
+    <div class="scene_vert_img_lrg">
+        
+        <p>
+	        <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23193">
+	        	<img src="//images5.naughtycdn.com/datana/upload/source/h1on1/bridgetteseth/bridgettesethvert_190x256.jpg" width="190" height="256"  alt="Wife Porn Video with Athletic Body and Big Dick scenes" >
+	        	<div class="label-hd"></div>
+    <div class="label-four-k"></div>
+
+
+ 
+	
+		
+		        </a>
+        </p>
+
+
+        <a style="text-decoration:none;" href="https://tour.naughtyamerica.com/site/housewife-1-on-1"></a>
+        
+
+
+    </div>
+
+    <div id="scene_horz_img_lrg">
+        <p class="scene_horz_img_lrg_pad">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23193">
+                <img src="//images5.naughtycdn.com/datana/upload/source/h1on1/bridgetteseth/bridgettesethimg1_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Seth Gamble in Housewife 1 on 1">
+            </a>
+        </p>
+
+        <p>
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23193"><img
+                        src="//images3.naughtycdn.com/datana/upload/source/h1on1/bridgetteseth/bridgettesethimg3_181x125.jpg" width="181" height="125" alt="Bridgette B. &amp; Seth Gamble in Housewife 1 on 1"></a>
+        </p>
+    </div>
+
+    <div id="scene_info" style="padding-left:16px;">
+        <p class="model-name-large">
+            <a href="https://tour.naughtyamerica.com/scene/bridgette-b-23193">
+                                    Bridgette B. &amp; Seth Gamble in Housewife 1 on 1
+                            </a>
+        </p>
+		        <p class="short-description">Your sexy Latina wife Bridgette B. doesn’t forget about you while you’re at work and she’s at home. As a matter of fact, she video...</p>
+		        <div class="site-icon">
+            <a href="https://tour.naughtyamerica.com/site/housewife-1-on-1"><img
+                        src="//sm.naughtycdn.com/assets/logos/scene_small/H1ON1.png"></a>
+        </div>
+		        <p class="model-name">Who:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/wife" title="Wife Porn Videos"
+                   alt="Wife Porn Videos">Wife</a>                                    </p>
+
+        <p class="model-name">Where:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/bed" title="Bed Porn Videos"
+                   alt="Bed Porn Videos">Bed</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/bedroom" title="Bedroom Porn Videos"
+                   alt="Bedroom Porn Videos">Bedroom</a>                                    </p>
+
+        <p class="model-name">Categories:
+                                        <a href="https://tour.naughtyamerica.com/fantasy/athletic-body-porn-videos" title="Athletic Body Porn Videos"
+                   alt="Athletic Body Porn Videos">Athletic Body</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-dick-porn-videos" title="Big Dick Porn Videos"
+                   alt="Big Dick Porn Videos">Big Dick</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-fake-tits-porn-videos" title="Big Fake Tits Porn Videos"
+                   alt="Big Fake Tits Porn Videos">Big Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/big-tits-porn-videos" title="Big Tits Porn Videos"
+                   alt="Big Tits Porn Videos">Big Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blonde-porn-videos" title="Blonde Porn Videos"
+                   alt="Blonde Porn Videos">Blonde</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/blow-job-porn-videos" title="Blow Job Porn Videos"
+                   alt="Blow Job Porn Videos">Blow Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/brown-eyes-porn-videos" title="Brown Eyes Porn Videos"
+                   alt="Brown Eyes Porn Videos">Brown Eyes</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/cum-on-tits-porn-videos" title="Cum on Tits Porn Videos"
+                   alt="Cum on Tits Porn Videos">Cum on Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/deepthroating-porn-videos" title="Deepthroating Porn Videos"
+                   alt="Deepthroating Porn Videos">Deepthroating</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/euro-porn-videos" title="Euro Porn Videos"
+                   alt="Euro Porn Videos">Euro</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/fake-tits-porn-videos" title="Fake Tits Porn Videos"
+                   alt="Fake Tits Porn Videos">Fake Tits</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/hand-job-porn-videos" title="Hand Job Porn Videos"
+                   alt="Hand Job Porn Videos">Hand Job</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/high-heels-porn-videos" title="High Heels Porn Videos"
+                   alt="High Heels Porn Videos">High Heels</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/latina-porn-videos" title="Latina Porn Videos"
+                   alt="Latina Porn Videos">Latina</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/lingerie-porn-videos" title="Lingerie Porn Videos"
+                   alt="Lingerie Porn Videos">Lingerie</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/masturbation-porn-videos" title="Masturbation Porn Videos"
+                   alt="Masturbation Porn Videos">Masturbation</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/medium-ass-porn-videos" title="Medium Ass Porn Videos"
+                   alt="Medium Ass Porn Videos">Medium Ass</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/outie-pussy-porn-videos" title="Outie Pussy Porn Videos"
+                   alt="Outie Pussy Porn Videos">Outie Pussy</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/pearl-necklace-porn-videos" title="Pearl Necklace Porn Videos"
+                   alt="Pearl Necklace Porn Videos">Pearl Necklace</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/pov-porn-videos" title="POV Porn Videos"
+                   alt="POV Porn Videos">POV</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/shaved-porn-videos" title="Shaved Porn Videos"
+                   alt="Shaved Porn Videos">Shaved</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/stockings-porn-videos" title="Stockings Porn Videos"
+                   alt="Stockings Porn Videos">Stockings</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/straight-porn-videos" title="Straight Porn Videos"
+                   alt="Straight Porn Videos">Straight</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/swallowing-porn-videos" title="Swallowing Porn Videos"
+                   alt="Swallowing Porn Videos">Swallowing</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/tattoos-porn-videos" title="Tattoos Porn Videos"
+                   alt="Tattoos Porn Videos">Tattoos</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/titty-fucking-porn-videos" title="Titty Fucking Porn Videos"
+                   alt="Titty Fucking Porn Videos">Titty Fucking</a>,
+                &nbsp;                                            <a href="https://tour.naughtyamerica.com/fantasy/young-porn-videos" title="Young Porn Videos"
+                   alt="Young Porn Videos">Young</a>                                    </p>
+		        <p class="model-name">Released: Sep 6, 2017</p>
+
+        <p class="watch-video"><a class="model-name-large"
+                                  href="https://tour.naughtyamerica.com/scene/bridgette-b-23193"
+                                  title="">Watch This Porn Video</a></p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="underline"></div>
+</div>
+
+                <div class="clear"></div>
+                <div class="pagination-list">
+            <a href="#" id="firstPage" class="arrows disabled"><i class="fa fa-angle-double-left"></i></a>
+            <a href="#" id="previousPage" class="arrows disabled"><i class="fa fa-angle-left"></i></a>
+            <a href="?page=1" id="goPage1" class="goPage one currentPage">1</a>
+                            <a href="?page=2" id="goPage2" class="goPage two">2</a>
+                                        <a href="?page=3" id="goPage3" class="goPage three">3</a>
+                                        <a href="?page=4" id="goPage4" class="goPage four">4</a>
+                        <a href="?page=2" id="nextPage" class="arrows "><i class="fa fa-angle-right"></i></a>
+            <a href="?page=9" id="lastPage" class="arrows "><i class="fa fa-angle-double-right"></i></a>
+    </div>
+
+
+
+
+            </div>
+                
+                                    <div class="content-headline" style="margin-bottom:10px;" id="all">
+                        <h2 style="width:400px;">Watch live archives with
+                                                                                                <a href="https://tour.naughtyamerica.com/pornstar/bridgette-b">Bridgette B.</a>
+                                                                                    </h2>
+                        <span style="float:right; margin-right:25px; position:relative; top:-32px;"></span>
+                    </div>
+                    <div class="container live-scenes">
+
+                        <div class="live_highlights_mod">
+
+    <div class="f-left"><a rel="no follow" href="https://tour.naughtyamerica.com/scene/bridgette-b-6567">
+            <img style="" src="//images3.naughtycdn.com/datana/upload/source/live/lnsebridgette_b5/lnsebridgette_b5hor_small_img1.jpg"></a></div>
+
+    <div class="f-left" style="margin-left:7px;">
+        <a rel="no follow" href="https://tour.naughtyamerica.com/scene/bridgette-b-6567"><img src="//images5.naughtycdn.com/datana/upload/source/live/lnsebridgette_b5/lnsebridgette_b5hor_small_img2.jpg" ></a>
+    </div>
+    <div class="clear"></div>
+    <div>
+        <p>
+            <a class="model-name" href="https://tour.naughtyamerica.com/scene/bridgette-b-6567" title="Watch live highlights with Bridgette B" alt="Watch live highlights with Bridgette B ">Bridgette B
+                in Live Naughty Secretary</a></p>
+        <p class="entry-date">She was live on: Jan 6, 2010</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="underline"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="clear"></div>
+                        
+                    </div>
+                
+
+        </div>
+        <div id="sidebar">
+            <div class="sideBar_divider">
+                <h3 style="text-align:center;">Get Access to Select Full Videos and Upgrades</h3>
+            </div>
+            <div class="sideBar_divider2">
+                <h3>Credit Card Options</h3>
+            </div>
+
+                <div id="no-select">
+                                <!-- ***** 3 Day Plan ***** -->
+                    <a class='join-link payment-method' data-join-option="3_day_trial" id="three-day" join_button="epoch_button" style="position:relative; display:block;" rel="nofollow" label="/Join_Clicks/Blue_Area/3-day Scene_Join" onclick="GA_link(this);" href="https://tour.naughtyamerica.com/join?button=trial" >
+                        <p class="trial_text">3 Day Membership</p>
+                        <p class="trial_currency">&#36;1.95</p>
+                        <div class="access_bttn_month"></div>
+                    </a>
+                    <!-- ***** 7 Day Plan ***** -->
+                    <a class='join-link payment-method' data-join-option="7_day_trial" id="seven-day" join_button="epoch_button" style="position:relative; display:block;" rel="nofollow" label="/Join_Clicks/Blue_Area/7-day Scene_Join" onclick="GA_link(this);" href="https://tour.naughtyamerica.com/join?button=trial2" >
+                        <p class="trial_text">7 Day Membership</p>
+                        <p class="trial_currency">&#36;4.95</p>
+                        <div class="access_bttn_month"></div>
+                    </a>
+                    <!-- ***** Monthly Plan ***** -->
+                    <div class="geo-test-buttons">
+                    </div>
+                    <div class="scene-buttons">
+                        <a class='join-link payment-method' rel="nofollow" data-join-option="monthly" id="monthly" join_button="epoch_button" label="/Join_Clicks/Blue_Area/Monthly Scene_Join" onclick="GA_link(this);" class="no_dec" href="https://tour.naughtyamerica.com/join?button=monthly">
+                            <p class="trial_text" id="lang-month">Monthly Membership</p>
+                            <p class="trial_currency" id="price-month">&#36;24.95</p>
+                            <div class="access_bttn_month"></div>
+                        </a>
+                    </div>
+                <!-- Regular Yearly -->
+                <div class="large-button" id="yearly-pd" style="display:none;" >
+                    <a class='join-link' join_button="epoch_button" rel="nofollow" label="/Join_Clicks/Blue_Area/Yearly Scene_Join"  onclick="GA_link(this);" href="https://tour.naughtyamerica.com/join?button=yearly" >
+                        <p class="payment-description"><span class="one-year">Annual</span> <br />Membership<br /><span style="font-weight:normal; line-height:3em; font-size:8px; letter-spacing:.06em; font-family:arial; text-shadow: 0 0 2px #333, 0 0 2px #333, 0 0 3px #333;">1 Year Membership</span></p>
+                        <p class="payment-amount">26&cent; <br /><span class="per-month">per day</span> </p>
+                    </a>
+                </div>
+                <a class='join-link payment-method' data-join-option="yearly" id="yearly" join_button="epoch_button" style="position:relative;" rel="nofollow" label="/Join_Clicks/Blue_Area/Yearly Scene_Join"  onclick="GA_link(this);" href="https://tour.naughtyamerica.com/join?button=yearly" >
+                    <p class="yearly_text" id="lang-year">Annual<span> <br>Membership</span></p>
+                    <p class="yearly_currency" id="price-year">&#36;5.95</p><p class="yearly_per_month" id="year-per-month"> per month</p>
+                    <p class="yearly_monthly_billing" id="lang-year-mini">Billed in one payment of &#36;71.40</p>
+                    <div class="access_bttn_year"></div>
+                </a>
+                <div class="sideBar_divider2">
+                <h3>Pay Anonymously, Trade Unused Gift Cards</h3>
+                <p class="cta-gift">No credit card needed! 100s of big brand cards accepted</p>
+                <a class="gift-card-link" join_button="epoch_button" rel="nofollow" label="/Join_Clicks/Blue_Area/GiftCard Scene_Join"  onclick="GA_link(this);" href="https://tour.naughtyamerica.com/join?button=giftcard">
+                    <img src="//sm.naughtycdn.com/images/tour/gift-card-join.png">
+                    <p>Trade Gift Card</p>
+                </a>
+                <a class="paypal-link" join_button="epoch_button" rel="nofollow" label="/Join_Clicks/Blue_Area/MonthlyPayPal Scene_Join"  onclick="GA_link(this);" href="https://tour.naughtyamerica.com/join?button=monthly&amp;cascade=creditpp">
+                    
+                    <p><img src="//sm.naughtycdn.com/images/paypal-by-epoch-3.png">PayPal</p>
+                </a>
+            </div>
+                </div>
+            <hr class="dotdot">
+                    </div>
+    </div>
+    <div class="footer_signup">
+        <a id="footer-signup-link" class="blue-button cta" href="https://tour.naughtyamerica.com/join" label="/Join_Clicks/Blue_Footer_Button/Monthly_Join" onclick="javascript:GA_link(this);" title="Join Naughty America Click Here" alt="Join Naughty America Click Here">CLICK HERE TO BECOME A MEMBER</a>
+    </div>
+ <div id="wrapper-footer">
+    <ul>
+        <li class="first">
+            <a href="https://tour.naughtyamerica.com">Home</a>
+        </li>
+        <li>
+            <a href="https://tour.naughtyamerica.com/fantasy/category" >Find Your Fantasy</a>
+        </li>
+        <li>
+            <a href="https://tour.naughtyamerica.com/new-porn-videos" >New Porn</a>
+        </li>
+        <li><a href="https://tour.naughtyamerica.com/pornstars" >Our Pornstars</a></li>
+        <li>
+            <a href="https://support.latouraineinc.com">Support</a>
+        </li>
+        <li>
+            <a href="https://epoch.com" target="_blank">Epoch.com</a>
+        </li>
+        <li>
+            <a href="https://segpaycs.com" target="_blank">SegPay.com</a>
+        </li>
+        <li>
+            <a class='join-link' label="/Join_Clicks/Footer_Text_Link/Monthly_Join" onclick="javascript:GA_link(this);" href="https://tour.naughtyamerica.com/join">Join Now</a>
+        </li>
+        <li>
+            <a class="login" href="https://members.naughtyamerica.com" style="font-size:12px;">Members Log In</a>
+        </li>
+    </ul>
+    <ul>
+        <li style="text-align:center;" class="first"><span class="copyright" style="font-size:12px; font-weight:bold;">&copy; 2018 La Touraine, Inc.</span></li>
+        <li ><a class="tos_18" href="https://www.naughtyamerica.com/2257.html" target="_blank" title="18 USC 2257 Record-Keeping Requirements Compliance Statement">18 USC 2257 Record-Keeping Requirements Compliance Statement</a></li>
+        <li><a class="tos_18" href="https://www.naughtyamerica.com/terms-of-service.html" target="_blank" title="Naughty America's Terms of Service">Terms of Service</a></li>
+        <li><a class="tos_18" href="https://www.naughtyamerica.com/privacy-policy.html" target="_blank" title="Privacy Statements">Privacy Policy</a></li>
+        <li><a class="tos_18" href="https://tour.naughtyamerica.com/sitemap" title="Naughty America's sitemap">Sitemap</a></li>
+    </ul>
+    <ul style="padding-bottom:5px;">
+        <li class="first">
+            <a class="x-links" href="https://tour.naughtyamerica.com/porn-tech" target="_blank" >Supported Devices</a>
+        </li>
+        <li>
+            <a class="x-links" href="https://www.naughtyamericavr.com " target="_blank">VR Porn</a>
+        </li>
+        <li>
+            <a class="x-links" href="https://www.naughtyamericavr.com/support" target="_blank">VR Support</a>
+        </li>
+        <li>
+            <a class="x-links" target="_blank" href="https://www.naughtyamerica.com/business">Let's Do Business</a>
+        </li>
+        <li>
+            <a class="x-links" href="https://www.naughtyrevenue.com" target="_blank">Affiliates</a>
+        </li>
+        <li>
+            <a class="x-links" href="https://naughtyamerica.threadless.com" target="_blank">Shop</a>
+        </li>
+
+    </ul>
+    <div style='width:80px; margin:0 auto;'><a href="http://www.rtalabel.org/" target="_blank"><div class='wwwrtalabel'></div></a></div>
+        </div>
+
+    </div><!-- /CONTENT -->
+    <script src="//sm.naughtycdn.com/build/js/lightbox-01b3ff2730.js"></script>
+<script>
+    $('#search-bar-with-glass').autocomplete({
+        source: "https://tour.naughtyamerica.com/search/autocomplete/basic",
+        minLength: 2,
+        select: function(event, ui){
+            window.location = ui.item.id;
+        }
+        }).autocomplete("instance")._renderItem = function( ul, item ) {
+            return $("<li>")
+                .append("<a>" + item.label + "<span style='float: right;'><small>" + item.type + "</small></span></a>")
+                .appendTo(ul);
+        };
+    $("#menu li a[href='" + document.URL + "']").css("background-color", "#5a595a");
+    var isPs3Browser = (navigator.userAgent.indexOf("PLAYSTATION 3") >= 0);
+        if (isPs3Browser){
+			$('head').append('<link rel="stylesheet" type="text/css" href="//sm.naughtycdn.com/build/css/tour/playstation-8e2eae6257.css"/>');
+        }
+        
+        // Temporarily Disabled: Add NA 1-900 Banner to the tour header carousel
+        // function addBannerToCarousel() {
+        //     console.log('>> Adding to carousel')
+        //     $('.main_header').slick('slickAdd','<a href="' + $('#join a').attr('href') + '&custom5=join_success_source_hero_banner" class="na1900_hero_banner" target="_self" onclick="trackClickInGTM(\'HeroNATour\',\'Clicked\',\'NA 1-900 Tour Carousel\')" class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 1000px;"><img src="//images.naughtycdn.com/tour/na1900/1900-TOURHEADER.jpg"></a>');
+        //     console.log('>> ADDED to carousel')
+        // }
+
+        // if($('.main_header').length > 0) {
+        //     // Once initialized, add the NA 1-900 ad into the carousel
+        //     if($('.main_header').hasClass('slick-initialized')) {
+        //         console.log(">> ADDING DIRECTLY")
+        //         addBannerToCarousel();
+        //         console.log(">> ADDED")
+        //     }
+        //     else {
+        //         console.log(">> SETTING INIT")
+        //         $('.main_header').on('init', function() {
+        //             console.log("++ INIT: FIRED")
+        //             //addBannerToCarousel();
+        //         });
+        //         $('.main_header').on('reInit', function() {
+        //             console.log("++ REINIT: FIRED")
+        //             //addBannerToCarousel();
+        //         });
+        //         console.log(">> INIT: SET")
+        //     }        
+        // }
+
+        // console.log($('.main_header'));
+        // console.log(">> Calling SLICK");
+		window.slider = $('.main_header').slick({
+			dots:true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 5000,
+        });
+
+        // console.log(">> Called SLICK")
+        // addBannerToCarousel();
+        // console.log($('.main_header'))
+
+        
+
+    $(document).ready(function(){
+
+        var $paypal = $(".paypal-popup");
+
+         if (Cookies.get('PaypalFloater') === "closed") {
+             $paypal.hide();
+         } else {
+             $paypal.show();
+         }
+
+    });
+
+    function closePaypal () {
+        $(".paypal-popup").hide();
+        Cookies.set("PaypalFloater", "closed", { expires: 30 });
+    }
+
+</script>
+
+    <div class="paypal-popup">
+        <div class="popup-content">
+            <div class="black">
+                <button type="button" class="close" onclick="closePaypal()"><span aria-hidden="true">X</span></button>
+            </div>
+            <a href="https://tour.naughtyamerica.com/join" class="paypal-container">
+                <h4 class="payment-type-paypal">Join Naughty America<br> securely with <strong>PayPal</strong>&#153 </h4>
+
+                <p class="credit-logo">
+                    <img src="//sm.naughtycdn.com/images/tour/paypal/visa.png">
+                    <img src="//sm.naughtycdn.com/images/tour/paypal/discover.png">
+                    <img src="//sm.naughtycdn.com/images/tour/paypal/mastercard.png">
+                    <img src="//sm.naughtycdn.com/images/tour/paypal/PayPal.png">
+                </p>
+            </a>
+        </div>
+    </div>
+<iframe src="https://trw12.com/d/a/5190.php" width="1" height="1" scrolling="no" border="0" frameborder="0"></iframe>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8475c8a1c7","applicationID":"1170780","transactionName":"ZAcAMREEWhJSVBEMWF1NIwYXDFsPHEMKEEUdEQEADQAaEltYEg==","queueTime":0,"applicationTime":622,"atts":"SEADR1keSRw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

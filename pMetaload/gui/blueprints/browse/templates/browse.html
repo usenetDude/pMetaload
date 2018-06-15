@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>-</td>
+                <td><a href={{ url_for('browsing.dir_browse', special='up') }}>..</a></td>
+                <td></td>
+            </tr>
+            {% for entry in dircontent %}
+                <tr>
+            {% if entry['type'] == 'file' %}
+                <td>-</td>
+                <td>{{ entry['entry'] }}</td>
+                <td>{{ entry['date'] }}</td>
+            {% elif entry['type'] == 'directory' %}
+                <td>+</td>
+                <td><a href={{ url_for('browsing.dir_browse',req_path=entry['entry']) }}>{{ entry['entry'] }}</a></td>
+                <td>{{ entry['date'] }}</td>
+            {% endif %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

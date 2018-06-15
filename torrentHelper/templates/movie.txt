@@ -1,0 +1,22 @@
+[align=center]
+{% if title is defined %}
+[b][size=5]{{title}}[/size][/b]
+{% endif %}
+{% if frontCover is defined %}[url={{frontCover['url_viewer']}}][img]{{frontCover['medium']}}[/img][/url]{% endif %}{% if backCover is defined %}[url={{backCover['url_viewer']}}][img]{{backCover['medium']}}[/img][/url]{% endif %}
+
+{% if cast is defined %}
+[cast]
+[b][size=5]{{cast}}[/size][/b]
+{% endif %}
+
+[info]
+[size=3]{{description}}
+
+File size: {{filesize}}
+Resolution: {{resolution}}
+Duration: {{duration}}
+[/size]
+
+[screens]
+[url={{videosheet['url_viewer']}}][img]{{videosheet['medium']}}[/img][/url]
+[/align]
